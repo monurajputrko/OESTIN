@@ -1,0 +1,169 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+#mainContainer {
+    margin: 0 100px 0 100px;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 70px;
+    column-gap: 25px;
+}
+
+#personalDetailsDivChild, #paymentDiv , #roomDetailsDiv {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#personalDetailsDivChild {
+    margin-bottom: 15px;
+    
+}
+
+/* #paymentHeading {
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: -10px;
+    width: 100%;
+} */
+
+#paymentHeadingDiv {
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 10px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#headingDiv {
+    width: 100%;
+}
+
+#formDiv > div{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#formTopDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#formBottomDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#getOTPButton {
+    margin-top: 21px;
+    border: none;
+    background-color: #B5876D;
+    border-radius: 5px;
+    color: #F1F1F1;
+    font-weight: bold;
+    margin-left: 10px;
+    width: fit-content;
+    height: 30px;
+}
+
+#headingDiv, #paymentHeading {
+    background-color: #F1F1F1;
+    padding: 10px;
+    width: auto;
+}
+
+#personalDetailsDivChild > p {
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+#verifyButton {
+    width: fit-content;
+    height: 30px;
+    border: none;
+    background-color: #1AB64F;
+    border-radius: 5px;
+    color: #F1F1F1;
+    /* text-decoration: solid; */
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#paymentTypesButtonsDiv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#paymentTypesButtonsDiv button {
+    width: 200px;
+    height: 50px;
+}
+
+#paymentTypesDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#formDiv div {
+    padding: 5px 0 5px 0;
+    margin-left: 10px;
+}
+
+#paymentDiv div{
+    margin: 0 10px 0 10px;
+    /* padding: 5px; */
+}
+
+#roomIdDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+}
+
+#roomIdDiv img {
+    width: 50%;
+    border: 1px solid red;
+    border-radius: 5px;
+    justify-content:flex-end;
+    /* align-items: end;
+    float: right; */
+    /* height: auto; */
+}
+
+#roomDetailsDiv div {
+    padding: 5px 0 5px 0;
+    margin: 0 10px;
+}
+
+#bookingDatesDiv  p:nth-of-type(2) {
+    border-left: 1px solid black;
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+
+#bookingDatesDiv {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 15px; */
+    justify-content: center;
+}
+
+#roomPriceDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#couponDiscountDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#payaybleAmountDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
