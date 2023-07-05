@@ -4,7 +4,7 @@
 }
 #mainContainer {
     margin: 0 100px 0 100px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 60% auto;
     padding: 70px;
@@ -55,7 +55,7 @@
 }
 
 #getOTPButton {
-    margin-top: 21px;
+    /* margin-top: 21px; */
     border: none;
     background-color: #B5876D;
     border-radius: 5px;
@@ -166,4 +166,33 @@
     flex-direction: row;
     justify-content: space-between;
 }
+#showDetailsDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    place-items: center;
+}
+#showDetailsDiv div{
+    /* place-items: center; */
+    text-align: center;
+    vertical-align: middle;
+    /* border: 1px solid green; */
+    padding: 0 15px;
+}
 
+#emailDiv {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#modifyButton {
+    border: none;
+    background-color: white;
+    border: 1px solid gray;
+    color: red;
+    border-radius: 5px;
+    width: fit-content;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}

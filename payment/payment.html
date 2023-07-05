@@ -13,32 +13,34 @@
         <div id = "personalDetailsDivParent">
             <div id = "personalDetailsDivChild">
                 <div id = "headingDiv"><b>Enter Your Details</b></div>
-            <p>We will use these details to share your booking information</p>
+            <p id = "dummyPara">We will use these details to share your booking information</p>
             <div id = "formDiv">
                 <form action="">
                     <div id = "formTopDiv">
                         <div>
                             <label for=""><b>Full Name</b></label><br>
-                            <input type="text" placeholder="Enter first and last name">
+                            <input type="text" id = "name" placeholder="Enter first and last name" required>
                         </div>
                         <div>
                             <label for=""><b>Email Address</b></label><br>
-                            <input type="text" placeholder="Enter email address">
+                            <input type="email" id = "email" placeholder="Enter email address" required>
                         </div>
                     </div>
                     
                     <div id = "formBottomDiv">
                         <div>
                             <label for=""><b>Mobile Number</b></label><br>
-                            <input type="text" placeholder="Enter mobile number">
+                            <input type="number" id = "mobile" pattern="[0-9]{10}" placeholder="Enter mobile number" required>
                         </div>
                         <div id = "otpDiv">
-                            <button id = "getOTPButton"><b>Get OTP</b></button>
+                            <!-- <button id = "getOTPButton"><b>Get OTP</b></button> -->
                         </div>
                     </div>
                 </form>
                 <div id = "verifyButtonDiv">
-                    <button id = "verifyButton">Verify & Continue</button></div>
+                    <!-- <button id = "verifyButton">Verify & Continue</button> -->
+                    <button id = "getOTPButton"><b>Get OTP</b></button>
+                </div>
             </div>
             </div>
             
