@@ -35,7 +35,7 @@
       }
 
       #btn {
-        background-color: #4caf50;
+        background-color: #b6540e;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -46,6 +46,21 @@
 
       h2 {
         margin-left: 160px;
+      }
+
+      .signin-section {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .signin-section span {
+        font-size: 14px;
+      }
+
+      .signin-section a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -87,6 +102,11 @@
           />
         </div>
         <button type="button" id="btn">Sign Up</button>
+
+        <div class="signin-section">
+          <span>Already have an account?</span>
+          <a href="login.html">Sign in</a>
+        </div>
       </form>
     </div>
   </body>
@@ -118,7 +138,27 @@
   console.log(app);
   const auth = getAuth();
 
-  document.getElementById("btn").addEventListener("click", function () {
+  let Boolean = false;
+  let password = document.getElementById("password");
+  let Cpassword = document.getElementById("confirmPassword");
+  Cpassword.addEventListener("input", function () {
+    let Xpass = Cpassword.value;
+    let Ppass = password.value;
+    if (Xpass.length > 0) {
+      if (Xpass !== Ppass) {
+        Boolean = false;
+      } else {
+        Boolean = true;
+      }
+    }
+  });
+
+  document.getElementById("btn").addEventListener("click", function (event) {
+    event.preventDefault();
+    if (!Boolean) {
+      alert(" Password does not matched");
+      return;
+    }
     let firstName = document.getElementById("fname").value;
     let lastName = document.getElementById("lname").value;
     let email = document.getElementById("email").value;
@@ -130,7 +170,7 @@
         const user = userCredential.user;
         alert("Registration successfull");
         console.log(user);
-        // ...
+        window.location.href = login.html;
       })
       .catch((error) => {
         const errorCode = error.code;
