@@ -10,7 +10,7 @@ verifyButton.textContent = "Verify & Continue";
 verifyButton.addEventListener("click", function() {
     let enteredOTP = document.getElementById("otp").value;
     if(enteredOTP === "0000") {
-        alert("success");
+        // alert("success");
         changeUiAfterContinue();
         payment();
     }
@@ -115,7 +115,10 @@ function validateOTP() {
 
 
 //to accept paymetn STARTED
+
 function payment() {
+  
+    
     let paymentDiv = document.createElement("div");
     paymentDiv.setAttribute("id", "paymentDiv");
 
@@ -124,9 +127,6 @@ function payment() {
     paymentHeadingDiv.textContent = "Choose payment method to pay";
     paymentHeadingDiv.style.fontWeight = "bold";
 
-    // let paymentHeading = document.createElement("h3");
-    // paymentHeading.setAttribute("id", "paymentHeading");
-    // paymentHeading.textContent = "Choose payment method to pay";
 
     let securityInfoDiv = document.createElement("div");
     securityInfoDiv.setAttribute("id", "securityInfoDiv");
@@ -145,7 +145,12 @@ function payment() {
 
     let payNowbtn = document.createElement("button");
     payNowbtn.textContent = "Pay Now";
-    payNowbtn.addEventListener("click", paymentGateway());
+    payNowbtn.setAttribute("id", "payNowbutton");
+    payNowbtn.addEventListener("click", function() {
+      paymentGateway();
+    });
+    
+    
     
     let payAtHotelDiv = document.createElement("div");
     payAtHotelDiv.setAttribute("id", "payAtHotelDiv");
@@ -166,10 +171,9 @@ function payment() {
 
         payAtHotelDiv.append(text, subtext, bookNowbtn);
         paymentInfoDiv.append(payAtHotelDiv);
+        
     })
 
-
-    // paymentHeadingDiv.appendChild(paymentHeading);
     paymentTypesDiv.append(paymentTypesButtonsDiv, paymentInfoDiv);
     paymentTypesButtonsDiv.append(payNowbtn, payAtHotelbtn);
     securityInfoDiv.append(securityInfo);
@@ -177,9 +181,28 @@ function payment() {
     document.getElementById("personalDetailsDivParent").append(paymentDiv);
 }
 
-//to accept payment ENDED
+
 
 function paymentGateway() {
+  let checkout = 11000 * 100;
+  var options = {
+    key: "rzp_test_UM3NWIQ3rEh0JA", // Enter the Key ID generated from the Dashboard
+    amount: checkout, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    currency: "INR",
+    name: "Oestin Hotels",
+    description: "Test Payment",
+    image:
+      "https://blog.playo.co/wp-content/uploads/2018/04/Playo-dp-gradient4-1.png",
+    // "order_id": "order_Ef80WJDPBmAeNt", //Pass the `id` obtained in the previous step
+    // "account_id": "acc_Ef7ArAsdU5t0XL",
+    handler: function (response) {
+      alert(response.razorpay_payment_id);
+      alert(response.razorpay_order_id);
+      alert(response.razorpay_signature);
+    },
+  };
+  var rzp1 = new Razorpay(options);
 
-    // document.getElementById("subtext").innerHTML = null;
+  rzp1.open();
+  e.preventDefault();
 }
