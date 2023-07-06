@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        padding-right: 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 8px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #btn {
+        background-color: #b6540e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 160px;
+      }
+
+      h2 {
+        margin-left: 160px;
+      }
+
+      .signin-section {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .signin-section span {
+        font-size: 14px;
+      }
+
+      .signin-section a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Signup</h2>
+      <form>
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="on"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            autocomplete="on"
+            required
+          />
+        </div>
+        <button type="button" id="btn">Sign Up</button>
+
+        <div class="signin-section">
+          <span>Already have an account?</span>
+          <a href="login.html">Sign in</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+  } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrvFQomLrrIlCdRy2dwwWvVz1bDccc4B8",
+    authDomain: "oestin--auth.firebaseapp.com",
+    projectId: "oestin--auth",
+    storageBucket: "oestin--auth.appspot.com",
+    messagingSenderId: "628793510087",
+    appId: "1:628793510087:web:b876fd87aafe47e8c096e2",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  console.log(app);
+  const auth = getAuth();
+
+  let Boolean = false;
+  let password = document.getElementById("password");
+  let Cpassword = document.getElementById("confirmPassword");
+  Cpassword.addEventListener("input", function () {
+    let Xpass = Cpassword.value;
+    let Ppass = password.value;
+    if (Xpass.length > 0) {
+      if (Xpass !== Ppass) {
+        Boolean = false;
+      } else {
+        Boolean = true;
+      }
+    }
+  });
+
+  document.getElementById("btn").addEventListener("click", function (event) {
+    event.preventDefault();
+    if (!Boolean) {
+      alert(" Password does not matched");
+      return;
+    }
+    let firstName = document.getElementById("fname").value;
+    let lastName = document.getElementById("lname").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        alert("Registration successfull");
+        console.log(user);
+        window.location.href = login.html;
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+        alert(errorMessage);
+      });
+  });
+</script>

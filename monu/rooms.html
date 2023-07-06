@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms</title>
+    <link rel="stylesheet" href="./Style/rrooms.css" />
+    <link rel="stylesheet" href="./Style/style.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!-- --------------------------------------------------- Rooms Start ------------------------------------------------------------------   -->
+    <section class="room-area pt-90 room-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="section-title text-center">
+              <h3>our luxury rooms</h3>
+              <p>
+                Luxurious hotel rooms with breathtaking views, elegant decor, and premium amenities, offering a serene escape for relaxation and rejuvenation. Unmatched comfort and personalized services create a memorable stay in the lap of luxury.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="mainM" class="row">
+
+        </div>
+        <div class="col-12">
+          <div class="pagination-content">
+            <ul class="pagination">
+              <li id="li1" onclick="fun1()"><a href="#">1</a></li>
+              <li id="li2" onclick="fun2()"><a href="#">2</a></li>
+              <li id="li3" onclick="fun3()"><a href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <a href=""></a> -->
+    <!-- -------------------------------------- Rooms Img End ------------------------------------------------------------------>
+
+    <div id="logo">
+      <div id="logo2">
+        <div
+          class="image-container"
+          onmouseover="changeImage()"
+          onmouseout="restoreImage()"
+        >
+          <img
+            src="https://htmldemo.net/oestin/oestin/img/client/1.png"
+            alt="Original Image"
+            id="image"
+          />
+        </div>
+        <div
+          class="image-container"
+          onmouseover="changeImage2()"
+          onmouseout="restoreImage2()"
+        >
+          <img
+            src="https://htmldemo.net/oestin/oestin/img/client/2.png"
+            alt="Original Image"
+            id="image2"
+          />
+        </div>
+        <div
+          class="image-container"
+          onmouseover="changeImage3()"
+          onmouseout="restoreImage3()"
+        >
+          <img
+            src="https://htmldemo.net/oestin/oestin/img/client/3.png"
+            alt="Original Image"
+            id="image3"
+          />
+        </div>
+        <div
+          class="image-container"
+          onmouseover="changeImage4()"
+          onmouseout="restoreImage4()"
+        >
+          <img
+            src="https://htmldemo.net/oestin/oestin/img/client/4.png"
+            alt="Original Image"
+            id="image4"
+          />
+        </div>
+        <div
+          class="image-container"
+          onmouseover="changeImage5()"
+          onmouseout="restoreImage5()"
+        >
+          <img
+            src="https://htmldemo.net/oestin/oestin/img/client/5.png"
+            alt="Original Image"
+            id="image5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------ News Letter ---------------------------------------------------------->
+
+    <section style="height: 198px; position: -ms-page;">
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <div style="align-items: center; margin-left: 20%; margin-right: 2%;">
+          <h3>NEWSLETTER SIGN-UP</h3>
+        </div>
+        <div style="align-items: center;" class="newsletter-form">
+          <form action="#" id="mc-form" class="mc-form fix" novalidate="true">
+          <input id="mc-email" type="email" name="EMAIL" placeholder="Enter your E-mail">
+          <button id="mc-submit" type="submit" class="default-btn">subcribes</button>
+          </form>
+          
+      </div>
+      </div>
+    </section>
+  </body>
+<script src="./rooms.js"></script>
+  <script>
+    //    --------------------- imges Hover Functions --------------------------------
+    function changeImage5() {
+      const hoverImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/5-hover.png"; // Replace with the path to the image to show on hover
+      const image = document.getElementById("image5");
+      image.src = hoverImageSrc;
+    }
+
+    function restoreImage5() {
+      const originalImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/5.png"; // Replace with the path to the original image
+      const image = document.getElementById("image5");
+      image.src = originalImageSrc;
+    }
+    function changeImage4() {
+      const hoverImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/4-hover.png"; // Replace with the path to the image to show on hover
+      const image = document.getElementById("image4");
+      image.src = hoverImageSrc;
+    }
+
+    function restoreImage4() {
+      const originalImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/4.png"; // Replace with the path to the original image
+      const image = document.getElementById("image4");
+      image.src = originalImageSrc;
+    }
+    function changeImage3() {
+      const hoverImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/3-hover.png"; // Replace with the path to the image to show on hover
+      const image = document.getElementById("image3");
+      image.src = hoverImageSrc;
+    }
+
+    function restoreImage3() {
+      const originalImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/3.png"; // Replace with the path to the original image
+      const image = document.getElementById("image3");
+      image.src = originalImageSrc;
+    }
+    function changeImage() {
+      const hoverImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/1-hover.png"; // Replace with the path to the image to show on hover
+      const image = document.getElementById("image");
+      image.src = hoverImageSrc;
+    }
+
+    function restoreImage() {
+      const originalImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/1.png"; // Replace with the path to the original image
+      const image = document.getElementById("image");
+      image.src = originalImageSrc;
+    }
+
+    function changeImage2() {
+      const hoverImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/2-hover.png"; // Replace with the path to the image to show on hover
+      const image = document.getElementById("image2");
+      image.src = hoverImageSrc;
+    }
+
+    function restoreImage2() {
+      const originalImageSrc =
+        "https://htmldemo.net/oestin/oestin/img/client/2.png"; // Replace with the path to the original image
+      const image = document.getElementById("image2");
+      image.src = originalImageSrc;
+    }
+  </script>
+</html>
