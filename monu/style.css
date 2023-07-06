@@ -1,0 +1,284 @@
+#logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 200px;
+  z-index: 100;
+}
+
+#logo2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 120px;
+  width: 1200px;
+  height: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+/* 
+#mc-subm {
+  background: #b5876d none repeat scroll 0 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#mc-subm:hover {
+  background-position: bottom;
+}
+
+#mc-subm:before {
+  background: rgba(255, 255, 255, 1);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0 0;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  z-index: -1;
+} */
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+button,
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  text-transform: none;
+}
+/* 
+[type=submit],
+button {
+  -webkit-appearance: button;
+} */
+
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
+/*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
+.fix {
+  overflow: hidden;
+}
+
+button,
+input {
+  outline: medium none;
+  color: #606060;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  color: #fff;
+}
+
+.default-btn {
+  background: #b5876d none repeat scroll 0 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.default-btn:before {
+  background: rgba(255, 255, 255, 1);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0 0;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+
+.default-btn:hover:before,
+.default-btn:focus:before,
+.default-btn:active:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.default-btn:hover,
+.default-btn:focus,
+.default-btn:active {
+  color: #B5876D;
+}
+
+input {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+  box-shadow: none;
+  color: #606060;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+input:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+}
+
+/*! end @import */
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
+.newsletter-form {
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  border: 1px solid #b7b6b6;
+  color: #4d4d4d;
+  font-family: "raleway";
+  font-size: 14px;
+  height: 38px;
+  padding: 0 8px;
+  width: 284px;
+}
+
+.newsletter-form form {
+  display: flex;
+  align-items: stretch;
+}
+
+.mailchimp-alerts {
+  display: block;
+  overflow: hidden;
+  padding-left: 53px;
+  width: 100%;
+}
+
+.newsletter-form button {
+  border: 0 none;
+  float: right;
+  line-height: 38px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.newsletter-form button::before {
+  background: #131313 none repeat scroll 0 0;
+}
+
+.newsletter-form button:hover {
+  color: #fff;
+}
+
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
+@media (min-width: 1920px) {
+  .mailchimp-alerts {
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mailchimp-alerts {
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .newsletter-form {
+    display: block;
+    float: left;
+    text-align: center;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .newsletter-form button {
+    float: none;
+  }
+
+  .newsletter-form form {
+    float: none;
+  }
+
+  .newsletter-form {
+    display: block;
+    float: none;
+  }
+}
+
+/* #mmm{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid rgb(255, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: linear-gradient(black 50%,transparent 50%);
+    background-size: 100% 200%;
+    transition: background-position 0.3s ease; 
+  }
+  #mmm:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    background-position: 100% 0; 
+  } */
+#mainInput {
+  width: 284px;
+  height: 38px;
+}
+
+/* @media (min-width: 1200px) {} */
