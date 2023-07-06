@@ -467,7 +467,7 @@ input:focus {
 }
 
 .post-content:hover a:before {
-    opacity: 1;
+    opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transform: scaleY(1);
@@ -475,7 +475,7 @@ input:focus {
     visibility: visible;
 }
 
-.post-img a:after {
+/* .post-img a:after {
     color: #ffffff;
     content: "";
     font-family: "Material-Design-Iconic-Font";
@@ -492,7 +492,7 @@ input:focus {
     transform: translate(-50%, -50%);
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-}
+} */
 
 .post-content:hover a:after {
     opacity: 1;

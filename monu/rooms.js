@@ -89,7 +89,7 @@ function Data(data) {
 
     a.textContent = el.roomtype;
 
-    Span.textContent ="$" + el.rent;
+    Span.textContent ="₹ " + el.rent;
 
     Span2.textContent = " Per Night";
 
