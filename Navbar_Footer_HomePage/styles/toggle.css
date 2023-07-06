@@ -1,0 +1,148 @@
+.image {
+	position: relative;
+	width: 402px;
+}
+#imagecontainer{
+    display: flex;
+   
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+    height: 100%;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+	background:rgb(27,27,27, .5) ;
+}
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.image__description {
+	font-size: 1.0em;
+	margin-top: 0.25em;
+    padding: 20px;
+}
+#empty{
+    width: 100%;
+    height: 399px;
+}
+
+#imagebtn{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(181,135,109) ;
+    color: white;
+    transition: 0.3s ease;
+}
+#imagebtn:hover{
+    background-color: white ;
+    color:rgb(181,135,109);
+
+}
+#imagebtnn{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(181,135,109) ;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#imagebtnn:hover{
+    background-color: white ;
+    color:rgb(181,135,109);
+
+}
+
+
+
+
+/* for the staff */
+#imagecontainerP{
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.image__overlayP {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	height: 60%;
+    
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlayP--blur {
+	backdrop-filter: blur(5px);
+}
+
+.image__overlayP--primary {
+	background:rgb(27,27,27, .5) ;
+}
+
+.image__overlayP>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlayP:hover {
+	opacity: 1;
+}
+
+.image__overlayP:hover>* {
+	transform: translateY(0);
+}
+
+

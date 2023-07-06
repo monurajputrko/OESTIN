@@ -1,0 +1,579 @@
+#booking{
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    /* gap: 20px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* z-index: 9999; */
+    /* margin-top: -50px; */
+  }
+  #dates>input{
+    height: 50px;
+    width: 170px;
+    /* padding: 10px; */
+    /* z-index: 99; */
+  
+  }
+  #optionstag>select{
+    height: 50px;
+    width: 170px;
+    /* z-index: 99; */
+  }
+  #search>button{
+    height: 50px;
+    width: 170px;
+    transition: ease 0.3s;
+    background-color: rgb(181,135,109);
+    border: none;
+    /* z-index: 99; */
+  }
+  #search>button:hover{
+     background-color: black;
+     border: none;
+     color: white;
+     /* z-index: 99; */
+  }
+  @media screen and (max-width: 960px) {
+  
+  #booking{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: none;
+    /* z-index: 99; */
+  }
+  #dates>input{
+    height: 60px;
+    width: 350px;
+    /* padding: 10px; */
+    /* z-index: 99; */
+  }
+  #optionstag>select{
+    height: 60px;
+    width: 350px;
+    /* z-index: 99; */
+  }
+  #search>button{
+    height: 60px;
+    width: 350px;;
+    transition: ease 0.3s;
+    background-color: rgb(181,135,109);
+    border: none;
+    /* z-index: 99; */
+  }
+  }
+  #heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #heading>p{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+  }
+  #heading>h2{
+    font-weight: 500;
+    font-size: 27px;
+  }
+#heading22{
+   width: 100%;
+   /* border: 5px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 40px;
+  /* gap: 30px; */
+  
+}
+
+#heading22 p{
+margin-left: 35px;
+margin-right: 35px;
+font-size: 20px;
+}
+
+#heading22 p:hover{
+  cursor: pointer;
+  color:  rgb(181,135,109);
+}
+
+
+
+#offers{
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 40px;
+  gap: 40px;
+ background: url(https://cdn.wynnresorts.com/q_auto,f_auto,w_1920/Wynn%20Las%20Vegas/Room%20and%20Suites/Wynn%20Resort%20Rooms/Panoramic%20Corner/1_Wynn%20Resort%20Pano%20Corner%20King-City%20View%20V1-Miller-RGB%20-%20Copy-1920x602);
+}
+
+#offer1{
+  width: 75%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#offer1 h2{
+ font-size: 45px;
+ color: white;
+}
+#offer1 span{
+ color: rgb(181,135,109);
+ }
+#offer2{
+  width: 25%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+ #offerbtn{
+  
+  width: 120px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  /* margin-right: 20px; */
+  background-color: rgb(181,135,109);
+  border: none;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+  border-radius: 2px;
+}
+#offerbtn:hover{
+  color: rgb(181,135,109);
+  background-color: white;
+}
+#empty{
+  height: 200px;
+}
+
+#pricelist{
+  width: 100%;
+  display: flex;
+   height: 600px;
+   /* border:2px solid black; */
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px;
+}
+
+#pricelist1{
+  /* border:2px solid black; */
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#subprice1{
+  /* border:2px solid black; */
+  width: 100%;
+  height: 20%;
+  background-color: rgb(241,241,241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#subprice2{
+  /* border:2px solid black; */
+  width: 100%;
+  height: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#subprice3{
+  /* border:2px solid black; */
+  width: 100%;
+  height: 58%;
+  background-color: rgb(241,241,241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+#subprice1 h3{
+   font-size: 27px;
+   font-weight: 500;
+}
+
+#subprice2>p>h1{
+  font-size: 32px;
+}
+#highlight{
+  color: rgb(181,135,109);
+}
+
+
+
+#subpricebtn{
+  
+  width: 100px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(181,135,109);
+  /* margin-right: 20px; */
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+  /* border-radius: 2px; */
+}
+
+#subpricebtn:hover{
+  color: white;
+  background-color:  rgb(181,135,109);
+}
+.pricelist2{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.imageS {
+	position: relative;
+	width: 350px;
+  object-fit: contain;
+    /* height: 300px; */
+    
+}
+#imagecontainerS{
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.image__imgS {
+	display: block;
+	width: 100%;
+  
+}
+
+.image__overlayS {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 10px;
+	background: whitesmoke;
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlayS--blur {
+	backdrop-filter: blur(5px);
+}
+
+.image__overlayS--primary {
+	background:rgb(27,27,27, .5) ;
+}
+
+.image__overlayS>* {
+	transform: translateY(20px);
+	transition: transform 0.5s;
+}
+
+.image__overlayS:hover {
+	opacity: 1;
+}
+
+.image__overlayS:hover>* {
+	transform: translateY(0);
+}
+
+.image__titleS {
+	font-size: 1.5em;
+	font-weight: bold;
+    color: black;
+}
+
+.image__descriptionS {
+	font-size: 0.8em;
+	margin-top: 0.25em;
+    color: black;
+    text-align: center;
+}
+.image__descriptionS {
+	font-size: 12px;
+	margin-top: 20px;
+    color: black;
+    gap: 10px;
+}
+.image__descriptionS>i {
+	
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#image__descriptionBtn{
+  
+  width: 100px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(181,135,109);
+  /* margin-right: 20px; */
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+
+  /* transition: 0.3s ease; */
+  /* border-radius: 2px; */
+}
+
+#image__descriptionBtn:hover{
+  color: white;
+  background-color:  rgb(181,135,109);
+}
+
+
+
+
+#secondfooter{
+  width: 100%;
+  height: 170px;
+  margin-top: 40px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(248,249,250);
+}
+
+#secondfooter1>h1{
+  /* border: 2px solid black; */
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#secondfooter2>input{
+  width: 270px;
+  height: 35px;
+  border: 1px solid black;
+  border-right: none;
+}
+#secondfooter2>button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  font: 14px;
+  color: white;
+  background-color: rgb(181,135,109);
+}
+
+#secondfooter2>button:hover{
+  background-color: black;
+}
+
+
+
+#footer{
+  width: 100%;
+  height: 480px;
+   /* border: 2px solid black; */
+   display:flex;
+   
+   flex-direction: column;
+}
+
+#subfooter1{
+  width: 100%;
+  height: 87%;
+  /* border: 2px solid black; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr); */
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+
+/* @media screen and (max-width: 850px) {
+  #subfooter1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+} */
+@media screen and (width: 800px) {
+
+  #subfooter1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  #footerimgparent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #childfooter1{
+    width: 45%;
+    padding: 0;
+    /* border: 2px solid white; */
+  }
+  #childfooter2{
+    width: 45%;
+    /* border: 2px solid white; */
+  }
+  #childfooter3{
+    width: 45%;
+    /* border: 2px solid white; */
+  }
+  #childfooter4{
+    width: 45%;
+    /* border: 2px solid white; */
+  }
+  i{
+    opacity: 0;
+  }
+}
+
+#subfooter2{
+  width: 100%;
+  height: 13%;
+  /* border: 2px solid black; */
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+}
+#subfooter2>p{
+   color: white;
+}
+#subfooter2>p>a{
+  color: white;
+  text-decoration: none;
+  color: rgb(181,135,109);
+}
+#subfooter2>p>a:hover{
+  
+  text-decoration: underline;
+  
+}
+
+#childfooter1{
+  width: 30%;
+  height: 90%;
+  /* border: 2px solid black; */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#childfooter2{
+  width: 17%;
+  height: 90%;
+  /* border: 2px solid black; */
+  padding: 12px;
+  margin-top: 20px;
+}
+#childfooter3{
+  width: 17%;
+  height: 90%;
+  /* border: 2px solid black; */
+  padding: 14px;
+  margin-top: 20px;
+}
+#childfooter4{
+  width: 30%;
+  height: 90%;
+  /* border: 2px solid black; */
+ /* display: flex; */
+ padding: 16px;
+ margin-top: 20px;
+}
+
+#footerimgparent{
+  width: 80%;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* row-gap: 5px; */
+  column-gap: 5px;
+  /* margin: auto; */
+  margin-top: 80px;
+}
+
+
+
+#childfooter1>h1{
+  color: #ffffff;
+}
+#childfooter1>p{
+  color: #ffffff;
+}
+#childfooter1>h4{
+  color: #ffffff;
+}
+
+#childfooter2>h3{
+  color: #ffffff;
+}
+#childfooter2>p{
+  color: #ffffff;
+}
+#childfooter2>i{
+  color: #ffffff;
+}
+
+#childfooter3>h3{
+  color: #ffffff;
+}
+#childfooter3>p{
+  color: #ffffff;
+}
+#childfooter4>h3{
+  color: #ffffff;
+}
+
+
+
+#subfooter1{
+  background-color: rgb(33,37,41);
+}
+
+
+#foooterhover:hover{
+  color: rgb(181,135,109);
+
+}
