@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div id = "mainContainer">
+        <!-- <button id = "modifyBookingButton">Modify Booking</button> -->
+        <div id = "personalDetailsDivParent">
+            <div id = "personalDetailsDivChild">
+                <div id = "headingDiv"><b>Enter Your Details</b></div>
+            <p id = "dummyPara">We will use these details to share your booking information</p>
+            <div id = "formDiv">
+                <form action="">
+                    <div id = "formTopDiv">
+                        <div>
+                            <label for=""><b>Full Name</b></label><br>
+                            <input type="text" id = "name" placeholder="Enter first and last name" required>
+                        </div>
+                        <div>
+                            <label for=""><b>Email Address</b></label><br>
+                            <input type="email" id = "email" placeholder="Enter email address" required>
+                        </div>
+                    </div>
+                    
+                    <div id = "formBottomDiv">
+                        <div>
+                            <label for=""><b>Mobile Number</b></label><br>
+                            <input type="number" id = "mobile" pattern="[0-9]{10}" placeholder="Enter mobile number" required>
+                        </div>
+                        <div id = "otpDiv">
+                            <!-- <button id = "getOTPButton"><b>Get OTP</b></button> -->
+                        </div>
+                    </div>
+                </form>
+                <div id = "verifyButtonDiv">
+                    <!-- <button id = "verifyButton">Verify & Continue</button> -->
+                    <button id = "getOTPButton"><b>Get OTP</b></button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- <div id = "paymentReadyDiv"></div> -->
+        <div id = "roomDetailsDiv">
+            <div id = "roomIdDiv">
+                <h5>Royal Suite</h5>
+                <img src="https://htmldemo.net/oestin/oestin/img/room/s-1.jpg" alt="royalSuite">
+            </div>
+            <div id = "bookingDatesDiv">
+                <p>Mon, 10 Jul - Tues, 11 Jul</p>
+                <p>1 Room 2 Guests</p>
+            </div>
+            <div id = "priceDiv">
+                <div id = "roomPriceDiv">
+                    <p>Room Price</p>
+                    <p><b>₹ 3500</b></p>
+                </div>
+                <div id = "couponDiscountDiv">
+                    <p>Coupon Discount</p>
+                    <p><b>₹ 500</b></p>
+                </div>
+                
+                <hr>
+                <div id = "payaybleAmountDiv">
+                    <p>Payable Amount</p>
+                    <!-- <p>Inclusive of all taxes</p> -->
+                    <p><b>₹ 3000</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="payment.js"></script>
