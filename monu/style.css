@@ -82,11 +82,11 @@ input {
 button {
   text-transform: none;
 }
-
+/* 
 [type=submit],
 button {
   -webkit-appearance: button;
-}
+} */
 
 [type=submit]:not(:disabled),
 button:not(:disabled) {
@@ -281,4 +281,4 @@ input:focus {
   height: 38px;
 }
 
-@media (min-width: 1200px) {}
+/* @media (min-width: 1200px) {} */
