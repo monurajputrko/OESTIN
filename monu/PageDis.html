@@ -69,7 +69,7 @@
                       " tabindex="-1" role="option" aria-describedby="slick-slide01">
                                         <img src="https://htmldemo.net/oestin/oestin/img/room/l-2.jpg" alt="" />
                                         <div class="cost">
-                                            <h2>$ 150</h2>
+                                            <h2>₹ 150</h2>
                                             <span>Per Night</span>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                       " tabindex="-1" role="option" aria-describedby="slick-slide02">
                                         <img src="https://htmldemo.net/oestin/oestin/img/room/l-3.jpg" alt="" />
                                         <div class="cost">
-                                            <h2>$ 120</h2>
+                                            <h2>₹ 120</h2>
                                             <span>Per Night</span>
                                         </div>
                                     </div>
@@ -99,7 +99,7 @@
                       " tabindex="-1" role="option" aria-describedby="slick-slide03">
                                         <img src="https://htmldemo.net/oestin/oestin/img/room/l-4.jpg" alt="" />
                                         <div class="cost">
-                                            <h2>$ 220</h2>
+                                            <h2>₹ 220</h2>
                                             <span>Per Night</span>
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@
                       " tabindex="-1" role="option" aria-describedby="slick-slide04">
                                         <img src="https://htmldemo.net/oestin/oestin/img/room/l-5.jpg" alt="" />
                                         <div class="cost">
-                                            <h2>$ 170</h2>
+                                            <h2>₹ 170</h2>
                                             <span>Per Night</span>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                         <div class="row nav-row" style="margin-top: -25%;">
                             <div class="slider-nav slick-initialized slick-slider">
                                 <button type="button" data-role="none" class="slick-prev slick-arrow"
-                                    aria-label="Previous" role="button" style="">
+                                    aria-label="Previous" role="button" >
                                     Previous
                                 </button>
                                 <div aria-live="polite" class="slick-list draggable" style="padding: 0px 50px">
@@ -174,7 +174,7 @@
                                 </div>
 
                                 <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next"
-                                    role="button" style="">
+                                    role="button" >
                                     Next
                                 </button>
                             </div>
@@ -212,10 +212,10 @@
                         <div class="form-container fix">
                             <div class="box-select">
                                 <div class="select date">
-                                    <input type="date" class="sdate" id="date" name="arrive" />
+                                    <input type="date" class="sdate" id="date1" name="arrive" />
                                 </div>
                                 <div class="select date">
-                                    <input type="date" class="edate" id="date" name="departure" />
+                                    <input type="date" class="edate" id="date2" name="departure" />
                                 </div>
                                 <!-- <div class="select arrow">
                                     <select name="adults">
@@ -265,6 +265,36 @@
                             <span>demo@example.com<br />demo@example.com</span>
                         </div>
                     </div>
+                    <div class="sidebar-widget">
+                        <h3 class="room-details-title">Best Rooms</h3>
+                        <div class="post-content">
+                            <div class="post-img">
+                                <a href="#" class="block"><img src="https://htmldemo.net/oestin/oestin/img/footer/1.jpg" alt=""></a>
+                            </div>
+                            <div class="post-text">
+                                <h4  style="margin-top: 1%;"><a href="#">Royal Suit</a></h4>
+                                <span>22 Dec, 2019</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img">
+                                <a href="#" class="block"><img src="https://htmldemo.net/oestin/oestin/img/footer/2.jpg" alt=""></a>
+                            </div>
+                            <div class="post-text">
+                                <h4 style="margin-top: 1%;"><a href="#">Resort</a></h4>
+                                <span>10 Feb, 2019</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img">
+                                <a href="#" class="block"><img src="https://htmldemo.net/oestin/oestin/img/footer/3.jpg" alt=""></a>
+                            </div>
+                            <div class="post-text">
+                                <h4 style="margin-top: 1%;"><a href="#">Deluxe Suit</a></h4>
+                                <span>06 Mar, 2019</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,7 +321,7 @@
                             </div>
                         </div>
                         <div class="p-amount">
-                            <span>$220</span>
+                            <span>₹ 220</span>
                             <span class="count">Per Night</span>
                         </div>
                     </div>
@@ -310,7 +340,7 @@
                             </div>
                         </div>
                         <div class="p-amount">
-                            <span>$150</span>
+                            <span>₹ 150</span>
                             <span class="count">Per Night</span>
                         </div>
                     </div>
@@ -329,7 +359,7 @@
                             </div>
                         </div>
                         <div class="p-amount">
-                            <span>$120</span>
+                            <span>₹ 120</span>
                             <span class="count">Per Night</span>
                         </div>
                     </div>
@@ -348,7 +378,7 @@
                             </div>
                         </div>
                         <div class="p-amount">
-                            <span>$100</span>
+                            <span>₹ 100</span>
                             <span class="count">Per Night</span>
                         </div>
                     </div>
@@ -360,14 +390,14 @@
         let amount = localStorage.getItem("price");
         let dic = localStorage.getItem("Dis");
 
-        document.getElementById("price").textContent = "$ " + amount;
+        document.getElementById("price").textContent = "₹ " + amount;
         document.getElementById("dicr").textContent = dic;
 
         // Get the current date
         let currentDate = new Date().toISOString().split("T")[0];
 
         // Set the minimum date for the input field
-        let dateInput = document.getElementById("date");
+        let dateInput = document.getElementById("date1");
         dateInput.min = currentDate;
 
         function getRandomBoolean() {
@@ -392,9 +422,13 @@
         console.log(result);
 
         function CheckAvail() {
-            let date = document.getElementById("date").value;
+            let date = document.getElementById("date1").value;
             console.log(date);
-            if(date==""){
+            let date2 = document.getElementById("date2").value;
+            console.log(date2);
+            localStorage.setItem("sdate",date);
+            localStorage.setItem("edate",date2);
+            if(date1=="" || date2=="" ){
                 document.getElementById("poptext").innerText =
                     "Please Select Date!";
                 const popupDiv = document.getElementById("popupDiv");
