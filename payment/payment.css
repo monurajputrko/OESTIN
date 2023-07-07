@@ -2,33 +2,131 @@
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
+@media all and (min-width:668px) {
+    
+    #mainContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+#formTopDiv input {
+    margin-top: 5px;
+}
+
+#formBottomDiv input {
+    margin-top: 5px;
+}
+
+}
+
 #mainContainer {
-    margin: 0 100px 0 100px;
+    /* margin: auto; */
+    width: auto;
     /* border: 1px solid blue; */
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: repeat(2, 1fr);
     padding: 70px;
     column-gap: 25px;
 }
 
+
+
+@media all  and (max-width:667px) {
+    #mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    
+    #roomIdDiv {
+        grid-template-columns:  repeat(2, 1fr);
+    }
+    #roomIdDiv > div{
+        border: 1px solid red;
+    }
+    #bookingDatesDiv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #formDiv div {
+        display: flex;
+        flex-direction: column;
+    }
+    #formDiv {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+        column-gap: normal;
+    }
+    
+}
+
+#yourBookingDetails {
+    background-color: #F1F1F1;
+    padding: 10px;
+    width: auto;
+    margin: 15px;
+    
+}
+#yourBookingDetailsHeading p{
+    background-color: #F1F1F1;
+    padding: 10px;
+    width:auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+#securityInfoDiv, #paymentTypesDiv {
+    padding: 10px;
+}
 #personalDetailsDivChild, #paymentDiv , #roomDetailsDiv {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-#personalDetailsDivChild {
-    margin-bottom: 15px;
-    
+#securityInfoDiv {
+    margin-top: -18px;
+    margin-bottom: -12px;
 }
 
-/* #paymentHeading {
-    width: 100%;
+#payAtHotelDiv {
+    align-items: center;
+}
+
+#booknowdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bookNowbtn {
+    width:100px;
+    height: 30px;
+    background-color: #B5876D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-self: center;
+    align-items: center;
+}
+
+#personalDetailsDivChild {
+    margin-bottom: 15px;
+}
+
+#yourRoomBookingDetails {
     background-color: #F1F1F1;
-    padding: -10px;
-    width: 100%;
-} */
+    padding: 10px;
+    width: auto;
+    margin-top: 15px;
+}
 
 #paymentHeadingDiv {
-    width: 100%;
+    /* width: 100%; */
     background-color: #F1F1F1;
     padding: 10px;
     width: auto;
@@ -55,7 +153,6 @@
 }
 
 #getOTPButton {
-    /* margin-top: 21px; */
     border: none;
     background-color: #B5876D;
     border-radius: 5px;
@@ -90,18 +187,23 @@
 }
 
 #paymentTypesButtonsDiv {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
 }
 
 #paymentTypesButtonsDiv button {
-    width: 200px;
-    height: 50px;
+    width:100px;
+    height: 30px;
+    background-color: #B5876D;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 #paymentTypesDiv {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 #formDiv div {
@@ -109,26 +211,29 @@
     margin-left: 10px;
 }
 
-#paymentDiv div{
-    margin: 0 10px 0 10px;
-    /* padding: 5px; */
-}
-
 #roomIdDiv {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* border: 1px solid red; */
-    /* justify-content: space-between; */
+    grid-template-columns: 60% auto;
 }
 
-#roomIdDiv img {
+i {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
+#roomImg {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    
+}
+
+#roomImg img {
     width: 50%;
-    border: 1px solid red;
-    border-radius: 5px;
-    justify-content:flex-end;
-    /* align-items: end;
-    float: right; */
-    /* height: auto; */
+    justify-content:space-around;
+    float: right;
 }
 
 #roomDetailsDiv div {
@@ -142,10 +247,13 @@
     margin-left: 5px;
   }
 
+#bookingDatesDiv div{
+    margin-top: -10px;
+}
+
 #bookingDatesDiv {
-    display: flex;
-    flex-direction: row;
-    /* column-gap: 15px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
 
@@ -153,6 +261,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -15px;
+}
+
+#priceDiv > div{
+    margin-top: -15px;
 }
 
 #couponDiscountDiv {

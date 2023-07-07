@@ -47,13 +47,22 @@
         </div>
         <!-- <div id = "paymentReadyDiv"></div> -->
         <div id = "roomDetailsDiv">
+            <div id = "yourBookingDetailsHeading">
+                <p><b>Your Booking Details</b></p>
+            </div>
+            
             <div id = "roomIdDiv">
-                <h5>Royal Suite</h5>
-                <img src="https://htmldemo.net/oestin/oestin/img/room/s-1.jpg" alt="royalSuite">
+                <div id = "roomAddress">
+                    <h5>Oestin Hotel</h5>
+                    <p><i class="fa-solid fa-location-dot"></i>Ram Palace Sec 52 wazirabad Gurgoan</p>
+                </div>
+                <div id = "roomImg">
+                    <img src="https://htmldemo.net/oestin/oestin/img/room/s-1.jpg"></div>                
             </div>
             <div id = "bookingDatesDiv">
-                <p>Mon, 10 Jul - Tues, 11 Jul</p>
-                <p>1 Room 2 Guests</p>
+                <div><p><i class="fa-regular fa-calendar-days"></i>Mon, 10 Jul - Tues, 11 Jul</p></div>
+                <div><p><i class="fa-solid fa-person"></i>1 Room 2 Guests</p></div>
+                <div><p><i class="fa-solid fa-house"></i>Royal Suite</p></div>
             </div>
             <div id = "priceDiv">
                 <div id = "roomPriceDiv">
@@ -61,10 +70,9 @@
                     <p><b>₹ 3500</b></p>
                 </div>
                 <div id = "couponDiscountDiv">
-                    <p>Coupon Discount</p>
+                    <p>Special Discount</p>
                     <p><b>₹ 500</b></p>
                 </div>
-                
                 <hr>
                 <div id = "payaybleAmountDiv">
                     <p>Payable Amount</p>
@@ -76,5 +84,9 @@
     </div>
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/c4e7e8fce5.js" crossorigin="anonymous"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 <script src="payment.js"></script>

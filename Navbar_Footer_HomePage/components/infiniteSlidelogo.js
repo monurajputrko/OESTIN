@@ -11,5 +11,7 @@ const infiniteSlider = () => {
   </div> 
   `;
   }
+
+  
   
   export default infiniteSlider;

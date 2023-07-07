@@ -1,0 +1,65 @@
+#mainContainer{
+    margin: 150px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 50px;
+}
+
+#hotelLocationDiv {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#paidByDiv {
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+
+#checkInDiv {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+
+#receiptNoDiv {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+#bookingDetailsDiv {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#hotelDetailsDiv  {
+    justify-content: center;
+    text-align: center;
+}
+
+#hotelNameDiv {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+#receiptDiv h2{
+    text-align: right;
+}
+
+#bookingDetailsDiv div {
+    column-gap: 20px;
+}
+
+#rightReceiptNoDiv, #leftReceiptNoDiv  p {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    text-align: center;
+}
