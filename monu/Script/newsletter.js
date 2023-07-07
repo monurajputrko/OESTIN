@@ -5,7 +5,7 @@
     const image = document.getElementById("image5");
     image.src = hoverImageSrc;
   }
-
+ 
   function restoreImage5() {
     const originalImageSrc =
       "https://htmldemo.net/oestin/oestin/img/client/5.png"; // Replace with the path to the original image

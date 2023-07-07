@@ -4,7 +4,7 @@ let dic = localStorage.getItem("Dis");
 
 document.getElementById("price").textContent = "₹ " + amount;
 document.getElementById("dicr").textContent = dic;
-
+ 
 // Get the current date
 let currentDate = new Date().toISOString().split("T")[0];
 
