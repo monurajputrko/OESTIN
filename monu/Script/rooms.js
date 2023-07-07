@@ -3,7 +3,6 @@ let page=1;
 let arr = [];
 let filt = document.getElementById("mthan");
 let filt1 = document.getElementById("lthan");
-// filt.addEventListener("change", function() {
  
 function mthan(){
 
@@ -29,46 +28,6 @@ function lthan(){
   Data(res);
 }
   
-// if(value==="Filter"){
-//   Data(arr); 
-// }else if(value==="More Than ₹ 100"){
-//   let res = arr.filter((ele)=>{
-//       return ele.rent>100;
-//   })
-//  
-//   }else if(value==="More Than ₹ 1000"){
-//     let res = arr.filter((ele)=>{
-//         return ele.rent>1000;
-//     })
-//     Data(res);
-//     }else if(value==="Less Than ₹ 500"){
-//       let res = arr.filter((ele)=>{
-//           return ele.rent<500;
-//       })
-//       Data(res);
-//       }else if(value==="Less Than ₹ 1000"){
-//         let res = arr.filter((ele)=>{
-//             return ele.rent<1000;
-//         })
-//         Data(res);
-//         }
-// });
-
-
-  // var selectedOption = filt.options[filt.selectedIndex].value;
-  // console.log(selectedOption);
-  // if (selectedOption === "Low to High") {
-  //   lth();
-  //   console.log("hii")
-  // }else if(selectedOption==="High to Low"){
-  //   htl();
-  // }else if(selectedOption==="A to Z"){
-  //   atz();
-  // }else if(selectedOption==="Z to A"){
-  //   zta();
-  // }
-
-
 
 
 
