@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="./receipt.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id ="hotelDetailsDiv">
+            <div id = "hotelNameDiv"><p><b>Oestin Hotels</b></p></div>
+            <div id="hotelLocationDiv">
+                <div id ="hotelLocation"><p>Bengaluru</p></div>
+                <div id ="hotelMobileNumber"><p>0877-2234564</p></div>
+                <div id ="hotelEmail"><p>oestinhotels@gmail.com</p></div>
+                <div id ="hotelWebsite"><p>www.hoteloestinxyz.com</p></div>
+            </div>
+        </div>
+        <hr>
+        <div id ="customerDetailsDiv">
+            <div id="paidByDiv">
+                <div id="custumorContactsDiv">
+                    <p><b>Paid By</b></p>
+                    <p id = "customerName">Chakri Ganesh N</p>
+                    <p id = "customerMobile">833244569</p>
+                    <p id = "customerEmail">chakriganesh10@gmail.com</p>
+                </div>
+                <div id="receiptDiv">
+                    <h2>RECEIPT</h2>
+                </div>
+            </div>
+            <div id="bookingDetailsDiv">
+                <div id="checkInDiv">
+                    <div id="leftCheckInDiv">
+                        <p>Check-in</p>
+                        <p>Check-out</p>
+                        <p>Guest</p>
+                        <p>Unit</p>
+                    </div>
+                    <div id="rightCheckInDiv">
+                        <p>Friday, 14:23:13 </p>
+                        <p>Sunday, 13:24:12</p>
+                        <p>Vamsi B</p>
+                        <p>Deluxe Room</p>
+                    </div>
+                </div>
+                <div id="receiptNoDiv">
+                    <div id="leftReceiptNoDiv">
+                        <P>Receipt Number</P>
+                        <P>Booking Number</P>
+                        <P>Receipt Date</P>
+                    </div>
+                    
+                    <div id="rightReceiptNoDiv">
+                        <p>0000234</p>
+                        <p>215</p>
+                        <p>23-4-2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="roomBookingDiv">
+            <table>
+                <tr>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Deluxe Room * 1</td>
+                  <td>₹2500</td>
+                </tr>
+                <tr>
+                  <td>Discount</td>
+                  <td>₹500</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>₹500</td>
+                </tr>
+              </table>
+        </div>
+        <div id ="notesDiv">
+            <p><b>Notes</b></p>
+             <p>Thank you for staying with us! Looking forward for your next visit.</p>
+        </div>
+        <button id = "print" >Print as PDF</button>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+document.getElementById("print").addEventListener("click", function(){
+        window.print();
+});
+</script>
