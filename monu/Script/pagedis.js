@@ -38,6 +38,12 @@ function CheckAvail() {
     console.log(date);
     let date2 = document.getElementById("date2").value;
     console.log(date2);
+    let rooms = document.getElementById("room").value;
+    console.log(rooms);
+    let person = document.getElementById("person").value;
+    console.log(person);
+    localStorage.setItem("rooms",rooms);
+    localStorage.setItem("persons",person);
     localStorage.setItem("sdate",date);
     localStorage.setItem("edate",date2);
     if(date == "" || date2== "" || date == null || date2 == null){
