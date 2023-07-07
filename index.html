@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="https://htmldemo.net/oestin/oestin/img/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://shrtco.de/DEjZPX">
 <link rel="stylesheet" href="./monu/Style/style.css">
+<link rel="stylesheet" href="./monu/Style/index.css">
+
   </head>
   <body>
     <section class="about-area">
@@ -23,14 +25,17 @@
             <form action="#" method="post" class="search-form">
               <div class="form-container fix">
                 <div class="box-select">
-                  <div style="width: 750px;" class="select date">
-                    <input  type="text" placeholder="Search City..." name="arrive" />
+                  <div style="width: 100%;" class="select date">
+                    <input  type="text" id="search" placeholder="Search for cities, places..."  />
                   </div>
-                
                 </div>
-                <button type="submit" class="search default-btn">
+                <!-- <button type="submit" class="search default-btn">
                   Search
-                </button>
+                </button> -->
+              </div>
+              <br>
+              <div id="show-results-div">
+                
               </div>
             </form>
           </div>
@@ -122,7 +127,7 @@
               </div>
             </div>
             <div class="p-amount">
-              <span>$220</span>
+              <span>₹220</span>
               <span class="count">Per Night</span>
             </div>
           </div>
@@ -142,7 +147,7 @@
               </div>
             </div>
             <div class="p-amount">
-              <span>$150</span>
+              <span>₹150</span>
               <span class="count">Per Night</span>
             </div>
           </div>
@@ -162,7 +167,7 @@
               </div>
             </div>
             <div class="p-amount">
-              <span>$120</span>
+              <span>₹120</span>
               <span class="count">Per Night</span>
             </div>
           </div>
@@ -182,7 +187,7 @@
               </div>
             </div>
             <div class="p-amount">
-              <span>$100</span>
+              <span>₹100</span>
               <span class="count">Per Night</span>
             </div>
           </div>
@@ -796,7 +801,7 @@
               <div class="package-name">
                 <h3>Silver Pack</h3>
                 <h1>
-                  <span class="currency">$</span>150
+                  <span class="currency">₹</span>150
                   <span class="count">/per night</span>
                 </h1>
               </div>
@@ -817,7 +822,7 @@
               <div class="package-name">
                 <h3>Gold Pack</h3>
                 <h1>
-                  <span class="currency">$</span>140
+                  <span class="currency">₹</span>140
                   <span class="count">/per night</span>
                 </h1>
               </div>
@@ -838,7 +843,7 @@
               <div class="package-name">
                 <h3>Diamond Pack</h3>
                 <h1>
-                  <span class="currency">$</span>190
+                  <span class="currency">₹</span>190
                   <span class="count">/per night</span>
                 </h1>
               </div>
@@ -940,11 +945,110 @@
           </div>
         </div>
       </section>
+      <footer style="background-color: #010101; margin-top: -5%;" class="footer-area">
+        <!-- Footer Widget Start -->
+        <div class="footer-widget-area bg-dark">
+        <div class="container">
+            <div class="row mb-n60">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+                <div class="single-footer-widget">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="https://htmldemo.net/oestin/oestin/img/logo/footer-logo.png" alt="Oestin"></a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, conse acteir our adipisicing elit,
+                    sed do eiusmod the a tempor the incididunt ut labore et dolore
+                    magnaa liqua. Ut enim minimn.
+                </p>
+                <div class="social-icons">
+                    <a href="#/"><i class="zmdi zmdi-facebook"></i></a>
+                    <a href="#/"><i class="zmdi zmdi-instagram"></i></a>
+                    <a href="#/"><i class="zmdi zmdi-rss"></i></a>
+                    <a href="#/"><i class="zmdi zmdi-twitter"></i></a>
+                    <a href="#/"><i class="zmdi zmdi-pinterest"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-3 offset-lg-1 col-lg-4  col-md-6 col-sm-6 col-12 mb-60">
+                <div class="single-footer-widget">
+                <h3>contact us</h3>
+                <div class="c-info">
+                    <span><i class="zmdi zmdi-pin"></i></span>
+                    <span>Gurgoan <br>Haryana</span>
+                </div>
+                <div class="c-info">
+                    <span><i class="zmdi zmdi-email"></i></span>
+                    <span>monurko99@gmail.com<br>demo@example.com</span>
+                </div>
+                <div class="c-info">
+                    <span><i class="zmdi zmdi-phone"></i></span>
+                    <span>9664366346<br>0123456789</span>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mb-60">
+                <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Stuffs</a></li>
+                    <li><a href="room-grid.html">Suits &amp; Rooms</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+                <div class="single-footer-widget">
+                <h3>collections</h3>
+                <div class="instagram-image">
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/1.jpg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/2.jpg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/3.jpg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/4.jpg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/5.jpg" alt=""></a>
+                    </div>
+                    <div class="footer-img">
+                    <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/6.jpg" alt=""></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Footer Widget End -->
+        <!-- Footer Bottom Area Start -->
+        <div class="footer-bottom-area bg-black">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="footer-text text-center">
+                <span>© 2023 <b class="text-white">Oestin</b> Made with <i style="color: red;">LOVE</i> by <a href="#"><b>Monu Singh , Vamsi , Aviral Dixit , Puneet Sharma</b></a><span>
+                </span></span></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- <a href="./monu/PageDis.html"></a> -->
+        <!-- Footer Bottom Area End -->
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
     <script src="/monu/Script/newsletter.js"></script>
+   <script src="./monu/Script/index.js"></script>
   </body>
 </html>

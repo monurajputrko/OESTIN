@@ -1,5 +1,159 @@
 
 let page=1;
+let arr = [];
+let filt = document.getElementById("mthan");
+let filt1 = document.getElementById("lthan");
+// filt.addEventListener("change", function() {
+
+function mthan(){
+
+  event.preventDefault();
+  let value = filt.value;
+  let res = arr.filter((ele)=>{
+    return ele.rent>value;
+      })
+  console.log("Val= "+value)
+  // Load2();
+  Data(res);
+}
+
+function lthan(){
+
+  event.preventDefault();
+  let value1 = filt1.value;
+  let res = arr.filter((ele)=>{
+    return ele.rent<value1;
+      })
+  console.log("Val= "+value1)
+  // Load2();
+  Data(res);
+}
+  
+// if(value==="Filter"){
+//   Data(arr); 
+// }else if(value==="More Than ₹ 100"){
+//   let res = arr.filter((ele)=>{
+//       return ele.rent>100;
+//   })
+//  
+//   }else if(value==="More Than ₹ 1000"){
+//     let res = arr.filter((ele)=>{
+//         return ele.rent>1000;
+//     })
+//     Data(res);
+//     }else if(value==="Less Than ₹ 500"){
+//       let res = arr.filter((ele)=>{
+//           return ele.rent<500;
+//       })
+//       Data(res);
+//       }else if(value==="Less Than ₹ 1000"){
+//         let res = arr.filter((ele)=>{
+//             return ele.rent<1000;
+//         })
+//         Data(res);
+//         }
+// });
+
+
+  // var selectedOption = filt.options[filt.selectedIndex].value;
+  // console.log(selectedOption);
+  // if (selectedOption === "Low to High") {
+  //   lth();
+  //   console.log("hii")
+  // }else if(selectedOption==="High to Low"){
+  //   htl();
+  // }else if(selectedOption==="A to Z"){
+  //   atz();
+  // }else if(selectedOption==="Z to A"){
+  //   zta();
+  // }
+
+
+
+
+
+let sortOp = document.getElementById("sort");
+
+sortOp.addEventListener("change", function() {
+  var selectedOption1 = sortOp.options[sortOp.selectedIndex].value;
+  if (selectedOption1 === "Low to High") {
+    lth();
+    console.log("hii")
+  }else if(selectedOption1==="High to Low"){
+    htl();
+  }else if(selectedOption1==="A to Z"){
+    atz();
+  }else if(selectedOption1==="Z to A"){
+    zta();
+  }
+});
+
+// if(selected==="Low to High"){
+//   lth();
+//   console.log("hii")
+// }
+
+
+async function lth(){
+  try {
+    let response = await fetch(
+      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=rent&_order=asc`
+    );
+    let data = await response.json();
+    Data(data);
+    console.log(data);
+    // Process the received data here
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function htl(){
+  try {
+    let response = await fetch(
+      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=rent&_order=desc`
+    );
+    let data = await response.json();
+    Data(data);
+    console.log(data);
+    // Process the received data here
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function zta(){
+  try {
+    let response = await fetch(
+      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=roomtype&_order=desc`
+    );
+    let data = await response.json();
+    Data(data);
+    console.log(data);
+    // Process the received data here
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function atz(){
+  try {
+    let response = await fetch(
+      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=roomtype&_order=asc`
+    );
+    let data = await response.json();
+    Data(data);
+    console.log(data);
+    // Process the received data here
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+
+
+
 
 
 function nav(){
@@ -53,6 +207,7 @@ try {
   console.log(error);
 }
 }
+
 
 
 function Data(data) {
@@ -121,11 +276,27 @@ Load();
 async function Load() {
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_page=${page}&_limit=9`
+      `https://weak-bandanna-fox.cyclic.app/rooms?_page=${page}&_limit=18`
     );
-    let data = await response.json();
-    Data(data);
-    console.log(data);
+    arr = await response.json();
+    
+    Data(arr);
+    console.log(arr);
+    // Process the received data here
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function Load2() {
+  try {
+    let response = await fetch(
+      `https://weak-bandanna-fox.cyclic.app/rooms`
+    );
+    arr = await response.json();
+    
+    Data(arr);
+    console.log(arr);
     // Process the received data here
   } catch (error) {
     console.log(error);

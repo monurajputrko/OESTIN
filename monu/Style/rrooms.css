@@ -5,6 +5,188 @@
     box-sizing: border-box;
 }
 
+/* ----------------------footer ----------------------------- */
+  /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
+
+  h3{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;}
+  h3{font-size:calc(1.3rem + .6vw);}
+  @media (min-width:1200px){
+  h3{font-size:1.75rem;}
+  }
+  p{margin-top:0;margin-bottom:1rem;}
+  ul{padding-left:2rem;}
+  ul{margin-top:0;margin-bottom:1rem;}
+  b{font-weight:bolder;}
+  a{color:#0d6efd;text-decoration:underline;}
+  a:hover{color:#0a58ca;}
+  img{vertical-align:middle;}
+  /* @media (min-width:576px){
+  .container{max-width:540px;}
+  }
+  @media (min-width:768px){
+  .container{max-width:720px;}
+  }
+  @media (min-width:992px){
+  .container{max-width:960px;}
+  }
+  @media (min-width:1200px){
+  .container{max-width:1140px;}
+  }
+  @media (min-width:1400px){
+  .container{max-width:1320px;}
+  }
+  .col-auto{flex:0 0 auto;width:auto;}
+  .col-12{flex:0 0 auto;width:100%;}
+  @media (min-width:576px){
+  .col-sm-6{flex:0 0 auto;width:50%;}
+  }
+  @media (min-width:768px){
+  .col-md-6{flex:0 0 auto;width:50%;}
+  }
+  @media (min-width:992px){
+  .col-lg-3{flex:0 0 auto;width:25%;}
+  .col-lg-4{flex:0 0 auto;width:33.33333333%;}
+  .offset-lg-1{margin-left:8.33333333%;}
+  } */
+  @media (min-width:1200px){
+  .col-xl-2{flex:0 0 auto;width:16.66666667%;}
+  .col-xl-3{flex:0 0 auto;width:25%;}
+  }
+  .justify-content-center{justify-content:center!important;}
+  .text-center{text-align:center!important;}
+  .text-danger{--bs-text-opacity:1;color:rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;}
+  .text-white{--bs-text-opacity:1;color:rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;}
+  .bg-dark{--bs-bg-opacity:1;background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;}
+  .bg-black{--bs-bg-opacity:1;background-color:rgba(var(--bs-black-rgb),var(--bs-bg-opacity))!important;}
+  /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/font-awesome.min.css */
+  .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  .fa-heart:before{content:"\f004";}
+  /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
+  /*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
+  h3{color:#444;margin:0;font-family:'Raleway', sans-serif;font-weight:700;}
+  a{-webkit-transition:all 0.3s ease-out 0s;transition:all 0.3s ease-out 0s;}
+  a:focus{text-decoration:none;outline:0px solid;}
+  a:focus,a:hover{color:#303030;text-decoration:none;}
+  a:active,a:hover{outline:0 none;}
+  a{outline:medium none;color:#606060;-webkit-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s;}
+  ::selection{background:#b3d4fc;text-shadow:none;color:#fff;}
+  p{line-height:24px;font-size:15px;}
+  ul{list-style:outside none none;margin:0;padding:0;}
+  .text-white{color:#fff;}
+  .mb-60{margin-bottom:60px;}
+  .mb-n60{margin-bottom:-60px;}
+  .bg-black{background:#010101;}
+  .bg-dark{background:#131313 none repeat scroll 0 0;}
+  @media (min-width: 576px){
+  .container{max-width:540px;}
+  }
+  @media (min-width: 768px){
+  .container{max-width:720px;}
+  }
+  @media (min-width: 992px){
+  .container{max-width:960px;}
+  }
+  @media (min-width: 1200px){
+  .container{max-width:1200px;}
+  }
+  @media (min-width: 1400px){
+  .container{max-width:1200px;}
+  }
+  .row{--bs-gutter-x:30px;}
+  /*! end @import */
+  /*! @import https://htmldemo.net/oestin/oestin/css/shortcode/footer.css */
+  .footer-area{color:#f7f7f7;}
+  .footer-widget-area{padding:130px 0 61px;}
+  .footer-logo > a{display:inline-block;}
+  .footer-logo{margin-bottom:29px;}
+  .social-icons a{border:1px solid #b1b1b1;color:#b1b1b1;display:inline-block;font-size:20px;height:33px;line-height:31px;margin-right:13px;text-align:center;-webkit-transition:all 0.5s ease 0s;transition:all 0.5s ease 0s;width:33px;}
+  .social-icons > a:last-child{margin-right:0;}
+  .social-icons > a:hover{background:#b5876d none repeat scroll 0 0;border-color:#b5876d;color:#ffffff;}
+  .social-icons{margin-top:43px;}
+  .single-footer-widget > h3{color:#ffffff;font-size:18px;line-height:14px;margin-bottom:45px;text-transform:uppercase;}
+  .footer-list li{margin-bottom:4px;}
+  .footer-list a{color:#f7f7f7;font-size:15px;line-height:26px;}
+  .footer-list li a{-webkit-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s;}
+  .footer-list li a:hover{color:#b5876d;}
+  .c-info > span:last-child{display:block;font-size:15px;line-height:24px;padding-left:50px;}
+  .c-info > span:first-child{border:1px solid #ffffff;color:#b5876d;display:inline-table;font-size:18px;height:33px;left:0;position:absolute;text-align:center;top:7px;-webkit-transition:all 0.2s linear 0s;transition:all 0.2s linear 0s;width:33px;}
+  .c-info > span:first-child i{display:table-cell;vertical-align:middle;}
+  .c-info{margin-bottom:17px;overflow:hidden;position:relative;}
+  .c-info:hover > span:first-child{background:#ffffff none repeat scroll 0 0;}
+  .instagram-image{overflow:hidden;display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;}
+  .footer-img a img{width:100%;object-fit:cover;}
+  .footer-img a{width:100%;}
+  .footer-img a{display:inline-block;position:relative;}
+  .footer-img a:before{background:rgba(0, 0, 0, 0.5) none repeat scroll 0 0;bottom:0;height:100%;left:0;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";position:absolute;right:0;top:0;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transition:all 0.5s ease 0s;transition:all 0.5s ease 0s;visibility:hidden;width:100%;content:"";}
+  .footer-img a:hover:before{opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";-webkit-transform:scaleY(1);transform:scaleY(1);visibility:visible;}
+  .footer-img a:after{color:#ffffff;content:"";font-family:"Material-Design-Iconic-Font";font-size:22px;left:50%;margin:auto;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";position:absolute;text-align:center;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);-webkit-transition:all 0.5s ease 0s;transition:all 0.5s ease 0s;}
+  .footer-img a:hover:after{opacity:1;filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+  .footer-bottom-area{padding:24px 0;}
+  .footer-text span a{color:#b5876d;}
+  .footer-text span a:hover{border-bottom:1px solid #b5876d;}
+  .footer-text > span{display:block;}
+  /*! end @import */
+  /*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.css */
+  .zmdi{display:inline-block;font:normal normal normal 14px/1 'Material-Design-Iconic-Font';font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  .zmdi-email:before{content:'\f15a';}
+  .zmdi-pin:before{content:'\f1ab';}
+  .zmdi-phone:before{content:'\f2be';}
+  .zmdi-facebook:before{content:'\f343';}
+  .zmdi-instagram:before{content:'\f34f';}
+  .zmdi-twitter:before{content:'\f360';}
+  .zmdi-rss:before{content:'\f3ea';}
+  .zmdi-pinterest:before{content:'\f3fc';}
+  .zmdi-email:before{content:'\f15a';}
+  .zmdi-pin:before{content:'\f1ab';}
+  .zmdi-phone:before{content:'\f2be';}
+  .zmdi-facebook:before{content:'\f343';}
+  .zmdi-instagram:before{content:'\f34f';}
+  .zmdi-twitter:before{content:'\f360';}
+  .zmdi-rss:before{content:'\f3ea';}
+  .zmdi-pinterest:before{content:'\f3fc';}
+  /*! end @import */
+  /*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.min.css */
+  .zmdi{display:inline-block;font:normal normal normal 14px/1 'Material-Design-Iconic-Font';font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  .zmdi-email:before{content:'\f15a';}
+  .zmdi-pin:before{content:'\f1ab';}
+  .zmdi-phone:before{content:'\f2be';}
+  .zmdi-facebook:before{content:'\f343';}
+  .zmdi-instagram:before{content:'\f34f';}
+  .zmdi-twitter:before{content:'\f360';}
+  .zmdi-rss:before{content:'\f3ea';}
+  .zmdi-pinterest:before{content:'\f3fc';}
+  .zmdi-email:before{content:'\f15a';}
+  .zmdi-pin:before{content:'\f1ab';}
+  .zmdi-phone:before{content:'\f2be';}
+  .zmdi-facebook:before{content:'\f343';}
+  .zmdi-instagram:before{content:'\f34f';}
+  .zmdi-twitter:before{content:'\f360';}
+  .zmdi-rss:before{content:'\f3ea';}
+  .zmdi-pinterest:before{content:'\f3fc';}
+  /*! end @import */
+  /*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
+  a{text-decoration:none;}
+  /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
+  @media (min-width: 1920px){
+  .container{width:1230px;max-width:100%;}
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+  .container{width:750px;max-width:100%;}
+  .social-icons > a{margin-right:10px;}
+  .c-info > span:last-child{padding-left:42px;}
+  .footer-img img{width:68px;}
+  }
+  @media (max-width: 767px){
+  .footer-widget-area{padding:60px 0;}
+  .single-footer-widget > h3{margin-bottom:20px;}
+  .c-info:last-child{margin:0;}
+  .footer-img img{width:82px;}
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px){
+  .footer-img img{width:62px;}
+  }
+/* ------------------------ footer end --------------------------- */
+
 h3 {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -762,4 +944,247 @@ a {
     .hover-text {
         display: none;
     }
+}
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+button {
+  border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+button,
+input,
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+select {
+  word-wrap: normal;
+}
+select:disabled {
+  opacity: 1;
+}
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
+/*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
+.fix {
+  overflow: hidden;
+}
+button,
+input {
+  outline: medium none;
+  color: #606060;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  color: #fff;
+}
+.default-btn {
+  background: #b5876d none repeat scroll 0 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+  vertical-align: middle;
+  display: inline-block;
+}
+.default-btn:before {
+  background: rgba(255, 255, 255, 1);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0 0;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.default-btn:hover:before,
+.default-btn:focus:before,
+.default-btn:active:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.default-btn:hover,
+.default-btn:focus,
+.default-btn:active {
+  color: #b5876d;
+}
+input,
+select {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+  box-shadow: none;
+  color: #606060;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 10px;
+  width: 100%;
+}
+select {
+  background: #ffffff none repeat scroll 0 0;
+  border: 0 none;
+  box-shadow: none;
+  color: #626262;
+  height: 100%;
+  padding-left: 10px;
+  width: 100%;
+}
+option {
+  background: #fff;
+  border: 0px solid #626262;
+  padding-left: 10px;
+  font-size: 14px;
+}
+input:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+}
+/*! end @import */
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
+form.search-form {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  padding: 50px 70px;
+  padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 20%;
+  position: relative;
+  z-index: 2;
+}
+.box-select .select {
+  border: 1px solid #dddddd;
+  float: left;
+  height: 48px;
+  margin-right: 25px;
+  width: 176px;
+}
+.box-select .select input[type="date"] {
+  text-transform: uppercase;
+  height: 100%;
+}
+.select > select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.select > select:focus {
+  outline: 0;
+}
+.search-form button {
+  border: 0 none;
+  color: #ffffff;
+  line-height: 48px;
+  text-transform: uppercase;
+  width: 182px;
+}
+.box-select .select {
+  position: relative;
+}
+.box-select .select::after {
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 18px;
+  position: absolute;
+  right: 9px;
+  top: 14px;
+  z-index: 1;
+}
+.box-select .select.arrow::after {
+  content: "\f2f2";
+  font-size: 24px;
+  top: 8px;
+}
+.search-form button:before {
+  background: #131313 none repeat scroll 0 0;
+}
+.search-form button:hover {
+  color: #fff;
+}
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
+@media (min-width: 992px) and (max-width: 1169px) {
+  .box-select .select {
+    margin-right: 15px;
+    width: 150px;
+  }
+  form.search-form {
+    padding: 50px 44px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  form.search-form {
+    box-shadow: none;
+    margin-top: 0;
+    padding: 50px 0;
+  }
+  .box-select .select {
+    margin-right: 7px;
+    width: 160px;
+  }
+  .search-form button {
+    width: 158px;
+  }
+  .box-select .select.arrow {
+    width: 107px;
+  }
+}
+@media (max-width: 767px) {
+  form.search-form {
+    box-shadow: none;
+    margin: 0;
+    padding: 30px 0;
+  }
+  .box-select .select {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .search-form button {
+    width: 100%;
+  }
+}
+@media (min-width: 1169px) and (max-width: 1300px) {
+  #frm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+  }
 }

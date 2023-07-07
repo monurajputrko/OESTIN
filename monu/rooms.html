@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooms</title>
     <link rel="stylesheet" href="./Style/rrooms.css" />
-    <link rel="stylesheet" href="./Style/style.css">
-    <link rel="shortcut icon" href="https://htmldemo.net/oestin/oestin/img/favicon.ico" type="image/x-icon" />
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://htmldemo.net/oestin/oestin/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+      integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
   </head>
   <body>
     <!-- --------------------------------------------------- Rooms Start ------------------------------------------------------------------   -->
@@ -20,26 +29,101 @@
             <div class="section-title text-center">
               <h3>our luxury rooms</h3>
               <p>
-                Luxurious hotel rooms with breathtaking views, elegant decor, and premium amenities, offering a serene escape for relaxation and rejuvenation. Unmatched comfort and personalized services create a memorable stay in the lap of luxury.
+                Luxurious hotel rooms with breathtaking views, elegant decor,
+                and premium amenities, offering a serene escape for relaxation
+                and rejuvenation. Unmatched comfort and personalized services
+                create a memorable stay in the lap of luxury.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div id="mainM" class="row">
-
+      <form
+        style="box-shadow: none"
+        id="frm"
+        action="#"
+        class="search-form"
+      >
+        <div class="form-container fix">
+          <div class="box-select">
+            <!-- <div class="select arrow">
+              <select id="filter" name="Sort">
+                <option>Filter</option>
+                <option>More Than ₹ 100</option>
+                <option>More Than ₹ 1000</option>
+                <option>Less Than ₹ 500</option>
+                <option>Less Than ₹ 1000</option>
+              </select>
+            </div> -->
+            <div class="select date">
+              <input id="mthan" type="number" placeholder="More Than ₹..."  />
+            </div>
+            <div onclick="mthan()" class="select date">
+              <button class="search default-btn" >Filter</button>
+            </div>
+            <div class="select arrow">
+              <select id="sort" name="Sort">
+                <option>Sort</option>
+                <option>Low to High</option>
+                <option>High to Low</option>
+                <option>A to Z</option>
+                <option>Z to A</option>
+              </select>
+            </div>
+            <div class="select date">
+              <input id="lthan" type="number" placeholder="Less Than ₹..."  />
+            </div>
+            <div onclick="lthan()" class="select date">
+              <button class="search default-btn" >Filter</button>
+            </div>
+          </div>
+          <!-- <button type="submit" class="search default-btn">Filter</button> -->
         </div>
+      </form>
+      <div class="container">
+        <div id="mainM" class="row"></div>
         <div class="col-12">
           <div class="pagination-content">
             <ul class="pagination">
-              <li id="li1" onclick="fun1()" style="font-size: 34px; margin-right: 20%; cursor: pointer; font-weight: 700;">1</li>
-              <li id="li2" onclick="fun2()" style="font-size: 34px; margin-right: 20%; cursor: pointer; font-weight: 700;">2</li>
-              <li id="li3" onclick="fun3()" style="font-size: 34px; margin-left: 0%; cursor: pointer; font-weight: 700;">3</li>
+              <li
+                id="li1"
+                onclick="fun1()"
+                style="
+                  font-size: 34px;
+                  margin-right: 20%;
+                  cursor: pointer;
+                  font-weight: 700;
+                "
+              >
+                1
+              </li>
+              <li
+                id="li2"
+                onclick="fun2()"
+                style="
+                  font-size: 34px;
+                  margin-right: 20%;
+                  cursor: pointer;
+                  font-weight: 700;
+                "
+              >
+                2
+              </li>
+              <li
+                id="li3"
+                onclick="fun3()"
+                style="
+                  font-size: 34px;
+                  margin-left: 0%;
+                  cursor: pointer;
+                  font-weight: 700;
+                "
+              >
+                3
+              </li>
             </ul>
           </div>
         </div>
-        
       </div>
     </section>
     <!-- <a href=""></a> -->
@@ -107,22 +191,164 @@
 
     <!-- ------------------------ News Letter ---------------------------------------------------------->
 
-    <section style="height: 198px; position: -ms-page;">
-      <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-        <div style="align-items: center; margin-left: 20%; margin-right: 2%;">
+    <section style="height: 198px; position: -ms-page">
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        <div style="align-items: center; margin-left: 20%; margin-right: 2%">
           <h3>NEWSLETTER SIGN-UP</h3>
         </div>
-        <div style="align-items: center;" class="newsletter-form">
+        <div style="align-items: center" class="newsletter-form">
           <form action="#" id="mc-form" class="mc-form fix" novalidate="true">
-          <input id="mc-email" type="email" name="EMAIL" placeholder="Enter your E-mail">
-          <button id="mc-submit" type="submit" class="default-btn">subcribes</button>
+            <input
+              id="mc-email"
+              type="email"
+              name="EMAIL"
+              placeholder="Enter your E-mail"
+            />
+            <button id="mc-submit" type="submit" class="default-btn">
+              subcribes
+            </button>
           </form>
-          
-      </div>
+        </div>
       </div>
     </section>
+    <footer
+      style="background-color: #010101; margin-top: -5%"
+      class="footer-area"
+    >
+      <!-- Footer Widget Start -->
+      <div class="footer-widget-area bg-dark">
+        <div class="container">
+          <div class="row mb-n60">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="https://htmldemo.net/oestin/oestin/img/logo/footer-logo.png"
+                      alt="Oestin"
+                  /></a>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, conse acteir our adipisicing elit,
+                  sed do eiusmod the a tempor the incididunt ut labore et dolore
+                  magnaa liqua. Ut enim minimn.
+                </p>
+                <div class="social-icons">
+                  <a href="#/"><i class="zmdi zmdi-facebook"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-instagram"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-rss"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-twitter"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 offset-lg-1 col-lg-4 col-md-6 col-sm-6 col-12 mb-60"
+            >
+              <div class="single-footer-widget">
+                <h3>contact us</h3>
+                <div class="c-info">
+                  <span><i class="zmdi zmdi-pin"></i></span>
+                  <span>Gurgoan <br />Haryana</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="zmdi zmdi-email"></i></span>
+                  <span>monurko99@gmail.com<br />demo@example.com</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="zmdi zmdi-phone"></i></span>
+                  <span>9664366346<br />0123456789</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="team.html">Stuffs</a></li>
+                  <li><a href="room-grid.html">Suits &amp; Rooms</a></li>
+                  <li><a href="event.html">Event</a></li>
+                  <li><a href="location.html">Location</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>collections</h3>
+                <div class="instagram-image">
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/1.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/2.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/3.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/4.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/5.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-img">
+                    <a href="room-grid.html"
+                      ><img
+                        src="https://htmldemo.net/oestin/oestin/img/footer/6.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Widget End -->
+      <!-- Footer Bottom Area Start -->
+      <div class="footer-bottom-area bg-black">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="footer-text text-center">
+                <span
+                  >© 2023 <b class="text-white">Oestin</b> Made with
+                  <i style="color: red">LOVE</i> by
+                  <a href="#"
+                    ><b>Monu Singh , Vamsi , Aviral Dixit , Puneet Sharma</b></a
+                  ><span> </span
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom Area End -->
+    </footer>
   </body>
-<script src="./rooms.js"></script>
+  <script src="./rooms.js"></script>
   <script>
     //    --------------------- imges Hover Functions --------------------------------
     function changeImage5() {
