@@ -54,30 +54,30 @@
             <div id = "roomIdDiv">
                 <div id = "roomAddress">
                     <h5>Oestin Hotel</h5>
-                    <p><i class="fa-solid fa-location-dot"></i>Ram Palace Sec 52 wazirabad Gurgoan</p>
+                    <i class="fa-solid fa-location-dot"></i><span id = "hotelRoomAddress"></span>
                 </div>
                 <div id = "roomImg">
                     <img src="https://htmldemo.net/oestin/oestin/img/room/s-1.jpg"></div>                
             </div>
             <div id = "bookingDatesDiv">
-                <div><p><i class="fa-regular fa-calendar-days"></i>Mon, 10 Jul - Tues, 11 Jul</p></div>
-                <div><p><i class="fa-solid fa-person"></i>1 Room 2 Guests</p></div>
-                <div><p><i class="fa-solid fa-house"></i>Royal Suite</p></div>
+                <div><p><i class="fa-regular fa-calendar-days"></i><span id = "startDay"></span> to <span id = "endDay"></span></p></div>
+                <div><p><i class="fa-solid fa-person"></i><span id = "noRoom"></span> Rooms & <span id = "noPeople"></span> People</p></div>
+                <!-- <div><p><i class="fa-solid fa-house"></i></p></div> -->
             </div>
             <div id = "priceDiv">
                 <div id = "roomPriceDiv">
                     <p>Room Price</p>
-                    <p><b>₹ 3500</b></p>
+                    <p><b>₹ <span id = "roomPrice"></span></b></p>
                 </div>
                 <div id = "couponDiscountDiv">
-                    <p>Special Discount</p>
-                    <p><b>₹ 500</b></p>
+                    <p>Special Discount (10%)</p>
+                    <p><b>₹ <span id = "specialDiscount"></span></b></p>
                 </div>
                 <hr>
                 <div id = "payaybleAmountDiv">
                     <p>Payable Amount</p>
                     <!-- <p>Inclusive of all taxes</p> -->
-                    <p><b>₹ 3000</b></p>
+                    <p><b>₹ <span id = "finalPrice"></span></b></p>
                 </div>
             </div>
         </div>
