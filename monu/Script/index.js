@@ -5,7 +5,7 @@ async function searchLocation(){
   //Getting the value again
 
   var search_value = inputTag.value;
-
+ 
 
   if(search_value.length < 1 || search_value == ""){
       return false;

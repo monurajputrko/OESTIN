@@ -12,7 +12,7 @@
   h3{font-size:calc(1.3rem + .6vw);}
   @media (min-width:1200px){
   h3{font-size:1.75rem;}
-  }
+  } 
   p{margin-top:0;margin-bottom:1rem;}
   ul{padding-left:2rem;}
   ul{margin-top:0;margin-bottom:1rem;}
