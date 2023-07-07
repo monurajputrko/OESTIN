@@ -428,9 +428,9 @@
             console.log(date2);
             localStorage.setItem("sdate",date);
             localStorage.setItem("edate",date2);
-            if(date1=="" || date2=="" ){
+            if(date == "" || date2== "" || date == null || date2 == null){
                 document.getElementById("poptext").innerText =
-                    "Please Select Date!";
+                    "Please Select Dates!";
                 const popupDiv = document.getElementById("popupDiv");
                 popupDiv.style.display = "block";
                 setTimeout(() => {
