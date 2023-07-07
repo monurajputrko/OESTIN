@@ -6,518 +6,8 @@
     <title>Rooms</title>
     <link rel="stylesheet" href="https://shrtco.de/qDKK5m" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
-      *,
-      ::after,
-      ::before {
-        box-sizing: border-box;
-      }
-      iframe {
-        border: 0;
-      }
-      .w-100 {
-        width: 100% !important;
-      }
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
-      /*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
-      ::selection {
-        background: #b3d4fc;
-        text-shadow: none;
-        color: #fff;
-      }
-      /*! end @import */
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
-      .contact-map {
-        height: 600px;
-        width: 100%;
-        display: block;
-      }
-
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
-      *,
-      ::after,
-      ::before {
-        box-sizing: border-box;
-      }
-      h4 {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 1.2;
-      }
-      h4 {
-        font-size: calc(1.275rem + 0.3vw);
-      }
-      @media (min-width: 1200px) {
-        h4 {
-          font-size: 1.5rem;
-        }
-      }
-      p {
-        margin-top: 0;
-        margin-bottom: 1rem;
-      }
-      a {
-        color: #0d6efd;
-        text-decoration: underline;
-      }
-      a:hover {
-        color: #0a58ca;
-      }
-      button {
-        border-radius: 0;
-      }
-      button:focus:not(:focus-visible) {
-        outline: 0;
-      }
-      button,
-      input,
-      textarea {
-        margin: 0;
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-      }
-      button {
-        text-transform: none;
-      }
-      [type="submit"]:not(:disabled),
-      button:not(:disabled) {
-        cursor: pointer;
-      }
-      textarea {
-        resize: vertical;
-      }
-      .container {
-        width: 100%;
-        padding-right: var(--bs-gutter-x, 0.75rem);
-        padding-left: var(--bs-gutter-x, 0.75rem);
-        margin-right: auto;
-        margin-left: auto;
-      }
-      @media (min-width: 576px) {
-        .container {
-          max-width: 540px;
-        }
-      }
-      @media (min-width: 768px) {
-        .container {
-          max-width: 720px;
-        }
-      }
-      @media (min-width: 992px) {
-        .container {
-          max-width: 960px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .container {
-          max-width: 1140px;
-        }
-      }
-      @media (min-width: 1400px) {
-        .container {
-          max-width: 1320px;
-        }
-      }
-      .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(-1 * var(--bs-gutter-y));
-        margin-right: calc(-0.5 * var(--bs-gutter-x));
-        margin-left: calc(-0.5 * var(--bs-gutter-x));
-      }
-      .row > * {
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 100%;
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-        padding-left: calc(var(--bs-gutter-x) * 0.5);
-        margin-top: var(--bs-gutter-y);
-      }
-      @media (min-width: 768px) {
-        .col-md-4 {
-          flex: 0 0 auto;
-          width: 33.33333333%;
-        }
-        .col-md-6 {
-          flex: 0 0 auto;
-          width: 50%;
-        }
-        .col-md-8 {
-          flex: 0 0 auto;
-          width: 66.66666667%;
-        }
-        .col-md-12 {
-          flex: 0 0 auto;
-          width: 100%;
-        }
-      }
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
-      /*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
-      h4 {
-        color: #444;
-        margin: 0;
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-      }
-      a {
-        -webkit-transition: all 0.3s ease-out 0s;
-        transition: all 0.3s ease-out 0s;
-      }
-      a:focus {
-        text-decoration: none;
-        outline: 0px solid;
-      }
-      a:focus,
-      a:hover {
-        color: #303030;
-        text-decoration: none;
-      }
-      a:active,
-      a:hover {
-        outline: 0 none;
-      }
-      a,
-      button,
-      input {
-        outline: medium none;
-        color: #606060;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-      }
-      ::selection {
-        background: #b3d4fc;
-        text-shadow: none;
-        color: #fff;
-      }
-      p {
-        line-height: 24px;
-        font-size: 15px;
-      }
-      .default-btn {
-        background: #b5876d none repeat scroll 0 0;
-        color: #ffffff;
-        font-family: "Raleway", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        position: relative;
-        text-transform: uppercase;
-        transform: perspective(1px) translateZ(0px);
-        transition-duration: 0.2s;
-        transition-property: color;
-        vertical-align: middle;
-        display: inline-block;
-      }
-      .default-btn:before {
-        background: rgba(255, 255, 255, 1);
-        bottom: 0;
-        content: "";
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: scaleY(0);
-        transform-origin: 50% 0 0;
-        transition-duration: 0.5s;
-        transition-property: transform;
-        transition-timing-function: ease-out;
-        z-index: -1;
-      }
-      .default-btn:hover:before,
-      .default-btn:focus:before,
-      .default-btn:active:before {
-        transform: scaleY(1);
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-      }
-      .default-btn:hover,
-      .default-btn:focus,
-      .default-btn:active {
-        color: #b5876d;
-      }
-      input,
-      textarea {
-        -webkit-transition: all 0.5s ease-out 0s;
-        transition: all 0.5s ease-out 0s;
-      }
-      input {
-        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-        border: medium none rgba(0, 0, 0, 0);
-        box-shadow: none;
-        color: #606060;
-        font-size: 14px;
-        height: 40px;
-        padding-left: 10px;
-        width: 100%;
-      }
-      input:focus {
-        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-        border: medium none rgba(0, 0, 0, 0);
-      }
-      textarea {
-        resize: vertical;
-        background: #eceff8;
-        border: 2px solid #eceff8;
-        padding: 10px;
-        width: 100%;
-        font-size: 14px;
-      }
-      textarea:focus {
-        background: transparent;
-        border: 2px solid #4fc1f0;
-        outline: none;
-      }
-      .pt-90 {
-        padding-top: 90px;
-      }
-      .container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      @media (min-width: 576px) {
-        .container {
-          max-width: 540px;
-        }
-      }
-      @media (min-width: 768px) {
-        .container {
-          max-width: 720px;
-        }
-      }
-      @media (min-width: 992px) {
-        .container {
-          max-width: 960px;
-        }
-      }
-      @media (min-width: 1200px) {
-        .container {
-          max-width: 1200px;
-        }
-      }
-      @media (min-width: 1400px) {
-        .container {
-          max-width: 1200px;
-        }
-      }
-      .row {
-        --bs-gutter-x: 30px;
-      }
-      /*! end @import */
-      /*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.css */
-      .zmdi {
-        display: inline-block;
-        font: normal normal normal 14px/1 "Material-Design-Iconic-Font";
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .zmdi-email:before {
-        content: "\f15a";
-      }
-      .zmdi-pin:before {
-        content: "\f1ab";
-      }
-      .zmdi-phone:before {
-        content: "\f2be";
-      }
-      .zmdi-facebook:before {
-        content: "\f343";
-      }
-      .zmdi-google-plus:before {
-        content: "\f34d";
-      }
-      .zmdi-instagram:before {
-        content: "\f34f";
-      }
-      .zmdi-rss:before {
-        content: "\f3ea";
-      }
-      .zmdi-pinterest:before {
-        content: "\f3fc";
-      }
-      .zmdi-email:before {
-        content: "\f15a";
-      }
-      .zmdi-pin:before {
-        content: "\f1ab";
-      }
-      .zmdi-phone:before {
-        content: "\f2be";
-      }
-      .zmdi-facebook:before {
-        content: "\f343";
-      }
-      .zmdi-google-plus:before {
-        content: "\f34d";
-      }
-      .zmdi-instagram:before {
-        content: "\f34f";
-      }
-      .zmdi-rss:before {
-        content: "\f3ea";
-      }
-      .zmdi-pinterest:before {
-        content: "\f3fc";
-      }
-      /*! end @import */
-      /*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.min.css */
-      .zmdi {
-        display: inline-block;
-        font: normal normal normal 14px/1 "Material-Design-Iconic-Font";
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .zmdi-email:before {
-        content: "\f15a";
-      }
-      .zmdi-pin:before {
-        content: "\f1ab";
-      }
-      .zmdi-phone:before {
-        content: "\f2be";
-      }
-      .zmdi-facebook:before {
-        content: "\f343";
-      }
-      .zmdi-google-plus:before {
-        content: "\f34d";
-      }
-      .zmdi-instagram:before {
-        content: "\f34f";
-      }
-      .zmdi-rss:before {
-        content: "\f3ea";
-      }
-      .zmdi-pinterest:before {
-        content: "\f3fc";
-      }
-      .zmdi-email:before {
-        content: "\f15a";
-      }
-      .zmdi-pin:before {
-        content: "\f1ab";
-      }
-      .zmdi-phone:before {
-        content: "\f2be";
-      }
-      .zmdi-facebook:before {
-        content: "\f343";
-      }
-      .zmdi-google-plus:before {
-        content: "\f34d";
-      }
-      .zmdi-instagram:before {
-        content: "\f34f";
-      }
-      .zmdi-rss:before {
-        content: "\f3ea";
-      }
-      .zmdi-pinterest:before {
-        content: "\f3fc";
-      }
-      /*! end @import */
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
-      a {
-        text-decoration: none;
-      }
-      h4.contact-title {
-        font-size: 24px;
-        line-height: 18px;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-      }
-      .contact-text > p {
-        line-height: 24px;
-        margin-bottom: 13px;
-      }
-      .contact-text i {
-        font-size: 18px;
-      }
-      span.c-icon {
-        display: inline-block;
-      }
-      span.c-icon i {
-        position: relative;
-        top: 3px;
-        width: 27px;
-      }
-      span.c-text {
-        display: inline-block;
-      }
-      .contact-text {
-        margin-bottom: 55px;
-      }
-      .link-social > a {
-        color: #444;
-        display: inline-block;
-        line-height: 19px;
-        margin-right: 27px;
-      }
-      .link-social > a:hover {
-        color: #b5876d;
-      }
-      .link-social > a i {
-        font-size: 20px;
-      }
-      .contact-form-area input,
-      .contact-form-area textarea {
-        background: #f1f1f1 none repeat scroll 0 0;
-        border: 0 none;
-        color: #444444;
-        font-size: 14px;
-        height: 48px;
-        margin-bottom: 20px;
-        padding: 0px 15px;
-        width: 100%;
-      }
-      .contact-form-area textarea {
-        height: 150px;
-        padding-top: 13px;
-        resize: none;
-      }
-      #contact-form button.default-btn {
-        border: 0 none;
-        font-size: 16px;
-        line-height: 40px;
-        padding: 0 35px;
-      }
-      #contact-form button.default-btn::before {
-        background: #333333 none repeat scroll 0 0;
-      }
-      /*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
-      @media (min-width: 1920px) {
-        .container {
-          width: 1230px;
-          max-width: 100%;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .container {
-          width: 750px;
-          max-width: 100%;
-        }
-        .link-social {
-          margin-bottom: 50px;
-        }
-      }
-      @media (max-width: 767px) {
-        .pt-90 {
-          padding-top: 50px;
-        }
-        .link-social {
-          margin-bottom: 40px;
-        }
-      }
-    </style>
+   <link rel="stylesheet" href="Style/contact.css">
+    <link rel="stylesheet" href="Style/style.css">
     <link rel="shortcut icon" href="https://htmldemo.net/oestin/oestin/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -679,6 +169,104 @@
         </div>
       </div>
     </section>
+    <footer style="background-color: #010101; margin-top: -5%;" class="footer-area">
+      <!-- Footer Widget Start -->
+      <div class="footer-widget-area bg-dark">
+      <div class="container">
+          <div class="row mb-n60">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+              <div class="footer-logo">
+                  <a href="index.html"><img src="https://htmldemo.net/oestin/oestin/img/logo/footer-logo.png" alt="Oestin"></a>
+              </div>
+              <p>
+                  Lorem ipsum dolor sit amet, conse acteir our adipisicing elit,
+                  sed do eiusmod the a tempor the incididunt ut labore et dolore
+                  magnaa liqua. Ut enim minimn.
+              </p>
+              <div class="social-icons">
+                  <a href="#/"><i class="zmdi zmdi-facebook"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-instagram"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-rss"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-twitter"></i></a>
+                  <a href="#/"><i class="zmdi zmdi-pinterest"></i></a>
+              </div>
+              </div>
+          </div>
+          <div class="col-xl-3 offset-lg-1 col-lg-4  col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+              <h3>contact us</h3>
+              <div class="c-info">
+                  <span><i class="zmdi zmdi-pin"></i></span>
+                  <span>Gurgoan <br>Haryana</span>
+              </div>
+              <div class="c-info">
+                  <span><i class="zmdi zmdi-email"></i></span>
+                  <span>monurko99@gmail.com<br>demo@example.com</span>
+              </div>
+              <div class="c-info">
+                  <span><i class="zmdi zmdi-phone"></i></span>
+                  <span>9664366346<br>0123456789</span>
+              </div>
+              </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+              <h3>quick links</h3>
+              <ul class="footer-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="team.html">Stuffs</a></li>
+                  <li><a href="room-grid.html">Suits &amp; Rooms</a></li>
+                  <li><a href="event.html">Event</a></li>
+                  <li><a href="location.html">Location</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+              <h3>collections</h3>
+              <div class="instagram-image">
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/1.jpg" alt=""></a>
+                  </div>
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/2.jpg" alt=""></a>
+                  </div>
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/3.jpg" alt=""></a>
+                  </div>
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/4.jpg" alt=""></a>
+                  </div>
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/5.jpg" alt=""></a>
+                  </div>
+                  <div class="footer-img">
+                  <a href="room-grid.html"><img src="https://htmldemo.net/oestin/oestin/img/footer/6.jpg" alt=""></a>
+                  </div>
+              </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      <!-- Footer Widget End -->
+      <!-- Footer Bottom Area Start -->
+      <div class="footer-bottom-area bg-black">
+      <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-auto">
+              <div class="footer-text text-center">
+              <span>© 2023 <b class="text-white">Oestin</b> Made with <i style="color: red;">LOVE</i> by <a href="#"><b>Monu Singh , Vamsi , Aviral Dixit , Puneet Sharma</b></a><span>
+              </span></span></div>
+          </div>
+          </div>
+      </div>
+      </div>
+      <!-- <a href="./monu/PageDis.html"></a> -->
+      <!-- Footer Bottom Area End -->
+  </footer>
   </body>
 
   <script>

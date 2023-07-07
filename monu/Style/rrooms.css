@@ -945,3 +945,246 @@ a {
         display: none;
     }
 }
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+button {
+  border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+button,
+input,
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+select {
+  word-wrap: normal;
+}
+select:disabled {
+  opacity: 1;
+}
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
+/*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
+.fix {
+  overflow: hidden;
+}
+button,
+input {
+  outline: medium none;
+  color: #606060;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+  color: #fff;
+}
+.default-btn {
+  background: #b5876d none repeat scroll 0 0;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+  vertical-align: middle;
+  display: inline-block;
+}
+.default-btn:before {
+  background: rgba(255, 255, 255, 1);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0 0;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.default-btn:hover:before,
+.default-btn:focus:before,
+.default-btn:active:before {
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.default-btn:hover,
+.default-btn:focus,
+.default-btn:active {
+  color: #b5876d;
+}
+input,
+select {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+  box-shadow: none;
+  color: #606060;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 10px;
+  width: 100%;
+}
+select {
+  background: #ffffff none repeat scroll 0 0;
+  border: 0 none;
+  box-shadow: none;
+  color: #626262;
+  height: 100%;
+  padding-left: 10px;
+  width: 100%;
+}
+option {
+  background: #fff;
+  border: 0px solid #626262;
+  padding-left: 10px;
+  font-size: 14px;
+}
+input:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none rgba(0, 0, 0, 0);
+}
+/*! end @import */
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
+form.search-form {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  padding: 50px 70px;
+  padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 20%;
+  position: relative;
+  z-index: 2;
+}
+.box-select .select {
+  border: 1px solid #dddddd;
+  float: left;
+  height: 48px;
+  margin-right: 25px;
+  width: 176px;
+}
+.box-select .select input[type="date"] {
+  text-transform: uppercase;
+  height: 100%;
+}
+.select > select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.select > select:focus {
+  outline: 0;
+}
+.search-form button {
+  border: 0 none;
+  color: #ffffff;
+  line-height: 48px;
+  text-transform: uppercase;
+  width: 182px;
+}
+.box-select .select {
+  position: relative;
+}
+.box-select .select::after {
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 18px;
+  position: absolute;
+  right: 9px;
+  top: 14px;
+  z-index: 1;
+}
+.box-select .select.arrow::after {
+  content: "\f2f2";
+  font-size: 24px;
+  top: 8px;
+}
+.search-form button:before {
+  background: #131313 none repeat scroll 0 0;
+}
+.search-form button:hover {
+  color: #fff;
+}
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
+@media (min-width: 992px) and (max-width: 1169px) {
+  .box-select .select {
+    margin-right: 15px;
+    width: 150px;
+  }
+  form.search-form {
+    padding: 50px 44px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  form.search-form {
+    box-shadow: none;
+    margin-top: 0;
+    padding: 50px 0;
+  }
+  .box-select .select {
+    margin-right: 7px;
+    width: 160px;
+  }
+  .search-form button {
+    width: 158px;
+  }
+  .box-select .select.arrow {
+    width: 107px;
+  }
+}
+@media (max-width: 767px) {
+  form.search-form {
+    box-shadow: none;
+    margin: 0;
+    padding: 30px 0;
+  }
+  .box-select .select {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .search-form button {
+    width: 100%;
+  }
+}
+@media (min-width: 1169px) and (max-width: 1300px) {
+  #frm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+  }
+}

@@ -1600,4 +1600,17 @@ form.search-form {
   @media only screen and (min-width: 480px) and (max-width: 767px){
   .footer-img img{width:62px;}
   }
-  
+  #popupDiv {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    width: 34%;
+    height: 5%;
+    background-color: rgba(181, 135, 109, 1);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 100;
+}
