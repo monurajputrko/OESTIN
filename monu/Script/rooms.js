@@ -256,6 +256,7 @@ function Data(data) {
     //     nav();
     // });
     RoomDetail.addEventListener("click", function () {
+      localStorage.setItem("PayLocation",el.address);
     localStorage.setItem("Dis",el.dis);
     localStorage.setItem("price",el.rent);
       nav();
