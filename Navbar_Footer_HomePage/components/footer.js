@@ -10,6 +10,8 @@ const footer = () => {
           <i id="foooterhover" class="fa-brands fa-instagram fa-flip fa-xl"></i>
           <i id="foooterhover" class="fa-brands fa-pinterest fa-flip fa-xl"></i></h4>
     </div>
+
+    
     <div id="childfooter2">
       <br><br>
        <h3>CONTACT US</h3> <br><br><br>
