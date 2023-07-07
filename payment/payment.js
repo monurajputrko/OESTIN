@@ -1,5 +1,4 @@
 //to get OTP STARTED
-
 let getOTP = document.getElementById("getOTPButton");
 
 let verifyButton = document.createElement("button");
@@ -7,17 +6,9 @@ verifyButton.setAttribute("id", "verifyButton")
 verifyButton.textContent = "Verify & Continue";
 //to verify the details STARTED
 
-verifyButton.addEventListener("click", function() {
-    let enteredOTP = document.getElementById("otp").value;
-    if(enteredOTP === "0000") {
-        // alert("success");
-        changeUiAfterContinue();
-        payment();
-    }
-    else {
-        alert("Wrong OTP. Use 0000");
-    }
-})
+let otp;
+
+
 //to verify the details ENDED
 
 function changeUiAfterContinue() {
@@ -30,26 +21,37 @@ function changeUiAfterContinue() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let mobile = document.getElementById("mobile").value;
+    let nameIconSpan = document.createElement("span");
+    nameIconSpan.setAttribute("id", "nameIconSpan");
+    let emailIconSpan = document.createElement("span");
+    emailIconSpan.setAttribute("id", "emailIconSpan");
+    let mobileIconSpan = document.createElement("span");
+    mobileIconSpan.setAttribute("id", "mobileIconSpan");
     let nameDiv = document.createElement("div");
     nameDiv.setAttribute("id", "nameDiv");
+    nameDiv.appendChild(nameIconSpan);
     let emailDiv = document.createElement("div");
     emailDiv.setAttribute("id", "emailDiv");
+    emailDiv.appendChild(emailIconSpan);
     
     let mobileDiv = document.createElement("div");
+    mobileDiv.appendChild(mobileIconSpan);
     mobileDiv.setAttribute("id", "mobileDiv");
     nameDiv.append(name);
     emailDiv.append(email);
     mobileDiv.append(mobile);
     let showDetailsDiv = document.createElement("div");
     showDetailsDiv.setAttribute("id", "showDetailsDiv");
-    let modifyButtonDiv = document.createElement("div");
-    modifyButtonDiv.setAttribute("id", "modifyButtonDiv");
-    let modifyButton = document.createElement("button");
-    modifyButton.setAttribute("id", "modifyButton");
-    modifyButton.textContent = "Modify";
-    modifyButtonDiv.append(modifyButton);
+    showDetailsDiv.className = "showDetailsDiv";
+    // let modifyButtonDiv = document.createElement("div");
+    // modifyButtonDiv.setAttribute("id", "modifyButtonDiv");
+    // let modifyButton = document.createElement("button");
+    // modifyButton.setAttribute("id", "modifyButton");
+    // modifyButton.textContent = "Modify";
+    // modifyButtonDiv.append(modifyButton);
     // document.getElementById("formDiv").append(modifyButton);
-    showDetailsDiv.append(nameDiv, emailDiv, mobileDiv, modifyButtonDiv);
+    showDetailsDiv.append(nameDiv, emailDiv, mobileDiv);
+    // showDetailsDiv.append(nameDiv, emailDiv, mobileDiv, modifyButtonDiv);
     document.getElementById("formDiv").innerHTML = "";
     document.getElementById("formDiv").append(showDetailsDiv);
 }
@@ -62,9 +64,10 @@ getOTP.addEventListener("click", function() {
     let mobileValidity = validateMobileInput(mobile);
 console.log(emailValidity, mobileValidity);
     if(emailValidity == true && mobileValidity==true) {
-        alert("OTP is 0000");
-        validateEmailInput(email);
-        validateMobileInput(mobile);
+        otp = generateRandomOTP();
+        alert(`OTP is ` + otp);
+        // validateEmailInput(email);
+        // validateMobileInput(mobile);
         document.getElementById("verifyButtonDiv").innerHTML = null;
         document.getElementById("verifyButtonDiv").append(verifyButton);
         validateOTP();
@@ -72,6 +75,24 @@ console.log(emailValidity, mobileValidity);
     console.log(name + " " + email + " " + mobile);
 })
 
+function generateRandomOTP() {
+  randomOTP = Math.floor(Math.random() * 9000 + 1000);
+  console.log(randomOTP);
+  return randomOTP;
+}
+
+verifyButton.addEventListener("click", function() {
+  let enteredOTP = document.getElementById("otp").value;
+  if(enteredOTP == otp) {
+      // alert("success");
+      changeUiAfterContinue();
+      payment();
+  }
+  else {
+    // alert(enteredOTP + "  " + otp)
+      alert("Wrong OTP. Use "+ otp);
+  }
+})
 
 function validateEmailInput(email) {
     let emails = document.getElementById("email");
@@ -112,8 +133,6 @@ function validateOTP() {
 
 //to get OTP FINISHED
 
-
-
 //to accept paymetn STARTED
 
 function payment() {
@@ -141,12 +160,13 @@ function payment() {
     paymentTypesButtonsDiv.setAttribute("id", "paymentTypesButtonsDiv");
 
     let paymentInfoDiv = document.createElement("div");
-    paymentInfoDiv.setAttribute("id", "paymentInfobtn");
+    paymentInfoDiv.setAttribute("id", "paymentInfobtnDiv");
 
     let payNowbtn = document.createElement("button");
     payNowbtn.textContent = "Pay Now";
     payNowbtn.setAttribute("id", "payNowbutton");
     payNowbtn.addEventListener("click", function() {
+      document.getElementById("paymentInfobtnDiv").innerHTML = "";
       paymentGateway();
     });
     
@@ -164,12 +184,14 @@ function payment() {
 
         let subtext = document.createElement("p");
         subtext.textContent = "We will confirm your stay without any charge. Pay directly at the hotel during your stay.";
-
+        
         let bookNowbtn = document.createElement("button");
         bookNowbtn.textContent = "Book Now";
         bookNowbtn.setAttribute("id", "bookNowbtn");
-
-        payAtHotelDiv.append(text, subtext, bookNowbtn);
+        let booknowdiv = document.createElement("div");
+        booknowdiv.setAttribute("id", "booknowdiv");
+        booknowdiv.append(bookNowbtn)
+        payAtHotelDiv.append(text, subtext, booknowdiv);
         paymentInfoDiv.append(payAtHotelDiv);
         
     })
@@ -181,10 +203,8 @@ function payment() {
     document.getElementById("personalDetailsDivParent").append(paymentDiv);
 }
 
-
-
 function paymentGateway() {
-  let checkout = 11000 * 100;
+  let checkout = 3000 * 100;
   var options = {
     key: "rzp_test_UM3NWIQ3rEh0JA", // Enter the Key ID generated from the Dashboard
     amount: checkout, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
@@ -196,9 +216,12 @@ function paymentGateway() {
     // "order_id": "order_Ef80WJDPBmAeNt", //Pass the `id` obtained in the previous step
     // "account_id": "acc_Ef7ArAsdU5t0XL",
     handler: function (response) {
-      alert(response.razorpay_payment_id);
-      alert(response.razorpay_order_id);
-      alert(response.razorpay_signature);
+      console.log(response);
+      window.location.href = "./receipt.html";
+
+      // alert(response.razorpay_payment_id);
+      // alert(response.razorpay_order_id);
+      // alert(response.razorpay_signature);
     },
   };
   var rzp1 = new Razorpay(options);
