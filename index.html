@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Oestin</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
@@ -13,6 +13,7 @@
     />
     <link rel="shortcut icon" href="https://htmldemo.net/oestin/oestin/img/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://shrtco.de/DEjZPX">
+<link rel="stylesheet" href="./monu/Style/style.css">
   </head>
   <body>
     <section class="about-area">
@@ -28,7 +29,7 @@
                 
                 </div>
                 <button type="submit" class="search default-btn">
-                  Check Availability
+                  Search
                 </button>
               </div>
             </form>
@@ -857,10 +858,93 @@
       </div>
     </section>
 
+    <div id="logo">
+        <div id="logo2">
+          <div
+            class="image-container"
+            onmouseover="changeImage()"
+            onmouseout="restoreImage()"
+          >
+            <img
+              src="https://htmldemo.net/oestin/oestin/img/client/1.png"
+              alt="Original Image"
+              id="image"
+            />
+          </div>
+          <div
+            class="image-container"
+            onmouseover="changeImage2()"
+            onmouseout="restoreImage2()"
+          >
+            <img
+              src="https://htmldemo.net/oestin/oestin/img/client/2.png"
+              alt="Original Image"
+              id="image2"
+            />
+          </div>
+          <div
+            class="image-container"
+            onmouseover="changeImage3()"
+            onmouseout="restoreImage3()"
+          >
+            <img
+              src="https://htmldemo.net/oestin/oestin/img/client/3.png"
+              alt="Original Image"
+              id="image3"
+            />
+          </div>
+          <div
+            class="image-container"
+            onmouseover="changeImage4()"
+            onmouseout="restoreImage4()"
+          >
+            <img
+              src="https://htmldemo.net/oestin/oestin/img/client/4.png"
+              alt="Original Image"
+              id="image4"
+            />
+          </div>
+          <div
+            class="image-container"
+            onmouseover="changeImage5()"
+            onmouseout="restoreImage5()"
+          >
+            <img
+              src="https://htmldemo.net/oestin/oestin/img/client/5.png"
+              alt="Original Image"
+              id="image5"
+            />
+          </div>
+        </div>
+      </div>
+  
+      <!-- ------------------------ News Letter ---------------------------------------------------------->
+  
+      <section style="height: 198px; position: -ms-page">
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+          <div style="margin-left: 20%; margin-right: 2%">
+            <h3>NEWSLETTER SIGN-UP</h3>
+          </div>
+          <div class="newsletter-form">
+            <form action="#" id="mc-form" class="mc-form fix" novalidate="true">
+              <input
+                id="mc-email"
+                type="email"
+                name="EMAIL"
+                placeholder="Enter your E-mail"
+              />
+              <button id="mc-submit" type="submit" class="default-btn">
+                subcribes
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="/monu/Script/newsletter.js"></script>
   </body>
 </html>

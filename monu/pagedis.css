@@ -1,0 +1,1422 @@
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+
+@media (min-width:1200px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: calc(1.3rem + .6vw);
+}
+
+@media (min-width:1200px) {
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4 {
+    font-size: calc(1.275rem + .3vw);
+}
+
+@media (min-width:1200px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.small {
+    font-size: .875em;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+img {
+    vertical-align: middle;
+}
+
+button {
+    border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+button,
+input,
+select {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+select {
+    word-wrap: normal;
+}
+
+select:disabled {
+    opacity: 1;
+}
+
+[type=button],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+[type=button]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width:992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+}
+
+@media (min-width:1200px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/shortcode/shortcodes.css */
+/*! @import https://htmldemo.net/oestin/oestin/css/shortcode/default.css */
+.fix {
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+}
+
+h2,
+h3,
+h4 {
+    color: #444;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0px solid;
+}
+
+a:focus,
+a:hover {
+    color: #303030;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0 none;
+}
+
+a,
+button,
+input {
+    outline: medium none;
+    color: #606060;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+h3 a,
+h4 a {
+    color: inherit;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    color: #fff;
+}
+
+p {
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.default-btn {
+    background: #b5876d none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    transform: perspective(1px) translateZ(0px);
+    transition-duration: 0.2s;
+    transition-property: color;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.default-btn:before {
+    background: rgba(255, 255, 255, 1);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0 0;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.default-btn:hover:before,
+.default-btn:focus:before,
+.default-btn:active:before {
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.default-btn:hover,
+.default-btn:focus,
+.default-btn:active {
+    color: #B5876D;
+}
+
+input,
+select {
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+
+input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: #606060;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+select {
+    background: #ffffff none repeat scroll 0 0;
+    border: 0 none;
+    box-shadow: none;
+    color: #626262;
+    height: 100%;
+    padding-left: 10px;
+    width: 100%;
+}
+
+option {
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+input:focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none rgba(0, 0, 0, 0);
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 30px;
+}
+
+/*! end @import */
+/*! @import https://htmldemo.net/oestin/oestin/css/shortcode/footer.css */
+.c-info>span:last-child {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 50px;
+}
+
+.c-info>span:first-child {
+    border: 1px solid #ffffff;
+    color: #b5876d;
+    display: inline-table;
+    font-size: 18px;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    width: 33px;
+}
+
+.c-info>span:first-child i {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.c-info {
+    margin-bottom: 17px;
+    overflow: hidden;
+    position: relative;
+}
+
+.c-info:hover>span:first-child {
+    background: #ffffff none repeat scroll 0 0;
+}
+
+.post-img a {
+    display: inline-block;
+    position: relative;
+}
+
+.post-img a:before {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    content: "";
+}
+
+.post-content:hover a:before {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    visibility: visible;
+}
+
+/* .post-img a:after {
+    color: #ffffff;
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 22px;
+    left: 50%;
+    margin: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+} */
+
+.post-content:hover a:after {
+    opacity: 1;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*! end @import */
+/*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.css */
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-close:before {
+    content: '\f136';
+}
+
+.zmdi-email:before {
+    content: '\f15a';
+}
+
+.zmdi-check:before {
+    content: '\f26b';
+}
+
+.zmdi-phone:before {
+    content: '\f2be';
+}
+
+.zmdi-close:before {
+    content: '\f136';
+}
+
+.zmdi-email:before {
+    content: '\f15a';
+}
+
+.zmdi-check:before {
+    content: '\f26b';
+}
+
+.zmdi-phone:before {
+    content: '\f2be';
+}
+
+/*! end @import */
+/*! @import https://htmldemo.net/oestin/oestin/css/material-design-iconic-font.min.css */
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-close:before {
+    content: '\f136';
+}
+
+.zmdi-email:before {
+    content: '\f15a';
+}
+
+.zmdi-check:before {
+    content: '\f26b';
+}
+
+.zmdi-phone:before {
+    content: '\f2be';
+}
+
+.zmdi-close:before {
+    content: '\f136';
+}
+
+.zmdi-email:before {
+    content: '\f15a';
+}
+
+.zmdi-check:before {
+    content: '\f26b';
+}
+
+.zmdi-phone:before {
+    content: '\f2be';
+}
+
+/*! end @import */
+/*! @import https://htmldemo.net/oestin/oestin/css/slick.css */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/*! end @import */
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/style.css */
+a {
+    text-decoration: none;
+}
+
+form.search-form {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    padding: 50px 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.box-select .select {
+    border: 1px solid #dddddd;
+    float: left;
+    height: 48px;
+    margin-right: 25px;
+    width: 176px;
+}
+
+.box-select .select input[type="date"] {
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.select>select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+
+.select>select:focus {
+    outline: 0;
+}
+
+.search-form button {
+    border: 0 none;
+    color: #ffffff;
+    line-height: 48px;
+    text-transform: uppercase;
+    width: 182px;
+}
+
+.box-select .select {
+    position: relative;
+}
+
+.box-select .select::after {
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 18px;
+    position: absolute;
+    right: 9px;
+    top: 14px;
+    z-index: 1;
+}
+
+.box-select .select.arrow::after {
+    content: "\f2f2";
+    font-size: 24px;
+    top: 8px;
+}
+
+.room-area .container-fluid {
+    padding: 0;
+}
+
+.single-room {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+.single-room.small {
+    width: 22.95%;
+}
+
+.single-room.large {
+    width: 29.1%;
+}
+
+.single-room.medium {
+    width: 25%;
+}
+
+.single-room img {
+    max-width: 100%;
+}
+
+.room-hover {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.room-hover:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in 0.4s;
+    width: 100%;
+}
+
+.single-room:hover .room-hover:after {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.single-room>h3 {
+    color: #ffffff;
+    left: 50%;
+    margin-bottom: 19px;
+    opacity: 1;
+    padding: 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease 0s;
+    width: 100%;
+    z-index: 1;
+}
+
+.single-room:hover>h3 {
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.hover-text>h3 {
+    color: #ffffff;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.single-room:hover .hover-text>h3 {
+    top: 26%;
+}
+
+.hover-text>p {
+    bottom: 41%;
+    color: #ffffff;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.large .hover-text>p {
+    padding: 0 10px;
+}
+
+.single-room:hover p {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+.hover-text>h3:hover a {
+    color: #b5876d;
+}
+
+.hover-text {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.hover-text .room-btn {
+    bottom: 25%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.single-room:hover .room-btn {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+.hover-text .default-btn {
+    display: inline-block;
+    line-height: 38px;
+    margin-top: 37px;
+    padding: 0 22px;
+}
+
+.p-amount {
+    bottom: 26px;
+    color: #ffffff;
+    position: absolute;
+    right: 28px;
+    transform: translateX(100px);
+    transition: all 0.3s ease-in-out 0.1s;
+    z-index: 2;
+}
+
+.p-amount>span {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.p-amount>span.count {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 3px;
+}
+
+.single-room:hover .p-amount {
+    opacity: 1;
+    transform: translateX(0px);
+    transition-delay: 0.3s;
+}
+
+.single-room.large:hover .hover-text>h3 {
+    top: 29%;
+}
+
+.single-room.large .hover-text>p {
+    bottom: 44%;
+}
+
+.single-room.large .hover-text>.room-btn {
+    bottom: 26%;
+}
+
+.search-form button:before {
+    background: #131313 none repeat scroll 0 0;
+}
+
+.search-form button:hover {
+    color: #fff;
+}
+
+.slick-list {
+    padding: 0 !important;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slider-nav .slick-slide {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.nav-row {
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+.room-slider {
+    margin-bottom: 20px;
+}
+
+.slider-nav {
+    position: relative;
+    overflow: hidden;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    padding: 0;
+}
+
+.slick-arrow {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    border: 0 none;
+    height: 100%;
+    left: 11px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    z-index: 9;
+}
+
+.slick-next {
+    left: auto;
+    right: 9px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #444444;
+    content: "\f2f4";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 48px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transition: all 0.3s ease 0s;
+    width: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.slick-next:before {
+    content: "\f2f6";
+}
+
+.room-details-title {
+    line-height: 18px;
+    margin-bottom: 34px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.room-details-title::after {
+    background: #b5876d none repeat scroll 0 0;
+    bottom: -10px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 90px;
+}
+
+.room-details-text {
+    padding-top: 50px;
+}
+
+.room-details-text>p {
+    margin-bottom: 24px;
+}
+
+.room-facilities {
+    margin-bottom: 32px;
+    overflow: hidden;
+    padding-top: 22px;
+}
+
+.single-facility>span {
+    display: block;
+    font-family: "raleway";
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.single-facility {
+    float: left;
+    width: 33.3333%;
+}
+
+.single-facility span i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.cost>h2,
+.cost span {
+    color: #ffffff;
+}
+
+.cost {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100px;
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 170px;
+}
+
+.cost>span {
+    display: block;
+    font-family: "raleway";
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.zmdi-check {
+    color: #1db000;
+}
+
+.zmdi-close {
+    color: #ff0101;
+}
+
+.room-area .room-details-title {
+    margin-bottom: 40px;
+}
+
+.cost>h2,
+.cost span {
+    color: #ffffff;
+}
+
+.cost {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100px;
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 170px;
+}
+
+.cost>span {
+    display: block;
+    font-family: "raleway";
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.sidebar-widget form.search-form {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-widget .box-select .select {
+    background: #ffffff none repeat scroll 0 0;
+    border-color: #ffffff;
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.sidebar-widget .search-form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sidebar-widget {
+    background: #f1f1f1 none repeat scroll 0 0;
+    margin-bottom: 50px;
+    padding: 24px 20px 30px;
+}
+
+.sidebar-widget .room-details-title {
+    font-size: 18px;
+    margin-bottom: 27px;
+    padding-top: 6px;
+}
+
+.sidebar-widget .room-details-title::after {
+    bottom: -7px;
+}
+
+.sidebar-widget .c-info>span:first-child {
+    border: 0 none;
+    text-align: left;
+}
+
+.sidebar-widget .c-info:hover>span:first-child {
+    background: transparent;
+    color: #252525;
+}
+
+.sidebar-widget .c-info {
+    margin-bottom: 12px;
+}
+
+.sidebar-widget .c-info-text {
+    margin-bottom: 12px;
+}
+
+.sidebar-widget .c-info:last-child {
+    margin: 0;
+}
+
+.sidebar-widget .c-info>span:last-child {
+    padding-left: 44px;
+}
+
+.post-img {
+    float: left;
+}
+
+.post-content {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.post-text {
+    overflow: hidden;
+    padding-left: 24px;
+}
+
+.post-text h4 {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.post-text h4:hover a {
+    color: #b5876d;
+}
+
+.post-text>span {
+    color: #909090;
+    display: block;
+    font-size: 13px;
+}
+
+.post-content:last-child {
+    margin: 0;
+}
+
+.room-details .single-room.large .hover-text {
+    padding: 0 80px;
+}
+
+/*! CSS Used from: https://htmldemo.net/oestin/oestin/css/responsive.css */
+@media (min-width: 1920px) {
+    .container {
+        width: 1230px;
+        max-width: 100%;
+    }
+
+    .single-room>img {
+        width: 100%;
+    }
+
+    .hover-text>p {
+        padding: 0 20px;
+    }
+
+    .single-room:hover .hover-text>h3,
+    .single-room.large:hover .hover-text>h3 {
+        top: 35%;
+    }
+
+    .hover-text .room-btn,
+    .single-room.large .hover-text>.room-btn {
+        bottom: 34%;
+    }
+
+    .hover-text>p,
+    .large .hover-text>p {
+        bottom: 46%;
+    }
+
+    .medium .hover-text>p {
+        padding: 0 42px;
+    }
+
+    .large .hover-text>p {
+        padding: 0 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+    .box-select .select {
+        margin-right: 15px;
+        width: 150px;
+    }
+
+    form.search-form {
+        padding: 50px 44px;
+    }
+
+    .p-amount {
+        right: 6px;
+    }
+
+    .p-amount>span {
+        font-size: 20px;
+    }
+
+    .hover-text .default-btn {
+        margin-top: 12px;
+    }
+
+    .hover-text .room-btn {
+        bottom: 16%;
+    }
+
+    .single-room:hover .hover-text>h3 {
+        top: 18%;
+    }
+
+    .hover-text>p {
+        bottom: 32%;
+    }
+
+    .single-room.large:hover .hover-text>h3 {
+        top: 22%;
+    }
+
+    .single-room.large .hover-text>p {
+        bottom: 39%;
+    }
+
+    .single-room.large .hover-text>.room-btn {
+        bottom: 21%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+        max-width: 100%;
+    }
+
+    form.search-form {
+        box-shadow: none;
+        margin-top: 0;
+        padding: 50px 0;
+    }
+
+    .box-select .select {
+        margin-right: 7px;
+        width: 160px;
+    }
+
+    .search-form button {
+        width: 158px;
+    }
+
+    .box-select .select.arrow {
+        width: 107px;
+    }
+
+    .hover-text>p {
+        display: none;
+    }
+
+    .hover-text .default-btn {
+        margin-top: 0;
+    }
+
+    .c-info>span:last-child {
+        padding-left: 42px;
+    }
+
+    .room-details .box-select .select.arrow {
+        width: 100%;
+    }
+
+    .single-room.large .hover-text>.room-btn {
+        bottom: 33%;
+    }
+
+    .single-room:hover .hover-text>h3 {
+        top: 36%;
+    }
+
+    .hover-text .room-btn {
+        bottom: 33%;
+    }
+}
+
+@media (max-width: 767px) {
+    form.search-form {
+        box-shadow: none;
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .box-select .select {
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+    .single-room,
+    .single-room.large,
+    .single-room.small,
+    .single-room.medium {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .pt-90 {
+        padding-top: 50px;
+    }
+
+    .single-room.medium {
+        margin-bottom: 0;
+    }
+
+    .c-info:last-child {
+        margin: 0;
+    }
+
+    .sidebar-widget .box-select .select.arrow {
+        width: 100%;
+    }
+
+    .cost {
+        height: 62px;
+        padding: 0;
+        width: 90px;
+    }
+
+    .room-details-title {
+        font-size: 22px;
+    }
+
+    .room-details-text>p {
+        margin-bottom: 10px;
+    }
+
+    .single-facility {
+        width: 100%;
+    }
+
+    .room-details .single-room.large .hover-text {
+        padding: 0 10px;
+    }
+
+    .single-room.large:hover .hover-text>h3 {
+        top: 22%;
+    }
+
+    .single-room.large .hover-text>p {
+        bottom: 39%;
+    }
+
+    .single-room.large .hover-text>.room-btn {
+        bottom: 21%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-room img {
+        width: 100%;
+    }
+
+    .hover-text {
+        display: none;
+    }
+}
