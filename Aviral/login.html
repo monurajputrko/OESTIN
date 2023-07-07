@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("p2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .wrapper {
+        display: flex;
+        width: 100%;
+        height: auto;
+      }
+
+      .left {
+        width: 100%;
+        padding: 20px;
+        margin-top: 60px;
+        box-sizing: border-box;
+        /* background-color: #fff9ef; */
+      }
+
       .container {
         max-width: 400px;
-        margin: 50px auto;
+        margin: 20px auto;
         padding: 20px;
         padding-right: 40px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.5);
       }
 
       .form-group {
@@ -34,7 +66,7 @@
         border-radius: 5px;
       }
 
-      #lbtn {
+      /* #lbtn {
         background-color: #b6540e;
         color: white;
         padding: 10px 20px;
@@ -42,19 +74,13 @@
         border-radius: 5px;
         cursor: pointer;
         margin-left: 160px;
-      }
+      } */
 
       h2 {
         margin-left: 160px;
       }
 
-      /* #gbtn{
-           padding: 8px 20px;
-           margin-left: 120px;
-           margin-top: 20px;
-           border-radius: 5px;
-           cursor: pointer;
-        } */
+
       .login-with-google {
         display: flex;
         align-items: center;
@@ -78,42 +104,180 @@
       .login-with-google span {
         font-weight: bold;
       }
+
+      .signUp-section a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .signUp-section {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .signUp-section span {
+        font-size: 14px;
+      }
+
+      a {
+        color: #0d6efd;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        outline: medium none;
+        border-radius: 8px;
+      }
+
+      a:hover {
+        color: #0a58ca;
+        outline: 0 none;
+      }
+
+      .default-btn {
+        background: #b5876d none repeat scroll 0 0;
+        color: #ffffff;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        transform: perspective(1px) translateZ(0px);
+        transition-duration: 0.2s;
+        transition-property: color;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .default-btn:before {
+        background: rgba(255, 255, 255, 1);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scaleY(0);
+        transform-origin: 50% 0 0;
+        transition-duration: 0.5s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+        z-index: -1;
+      }
+
+      .default-btn:hover:before,
+      .default-btn:focus:before,
+      .default-btn:active:before {
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }
+
+      .default-btn:hover,
+      .default-btn:focus,
+      .default-btn:active {
+        color: #b5876d;
+      }
+
+      .button {
+        overflow: hidden;
+        padding: 75px 0;
+       
+      }
+
+      .button > h1 {
+        color: #ffffff;
+        float: left;
+        font-size: 48px;
+        line-height: 48px;
+        text-transform: uppercase;
+      }
+
+      .button span {
+        color: #b5876d;
+      }
+
+      .button .default-btn {
+        line-height: 48px;
+        padding: 0 25px;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          padding: 10px;
+          padding-right: 20px;
+        }
+
+        h2 {
+          margin-left: 0;
+          text-align: center;
+        }
+
+        .button {
+          padding: 60px 0;
+        }
+
+        .button > h1 {
+          font-size: 32px;
+          line-height: 32px;
+        }
+      }
+
+
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2>Login</h2>
-      <form>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+    <div class="wrapper">
+      <div class="left">
+        <div class="container">
+          <!-- Signup form content -->
+          <h2>Login</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                autocomplete="on"
+              />
+            </div>
+
+            <!-- <button type="button" id="lbtn">Login</button> -->
+
+            <div
+              id="lbtn"
+              class="button"
+              style="margin-bottom: -19%; margin-left: 35%; margin-top: -17%"
+            >
+              <a href="#" class="default-btn">Sign Up</a>
+            </div>
+          </form>
+          <hr style="margin-top: 20px" />
+          <button class="login-with-google" id="goFast1">
+            <img
+              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+              alt="Google Logo"
+            />
+            <span>Login with Google</span>
+          </button>
+
+          <div class="signUp-section">
+            <span> Not a member ?</span>
+            <a href="signUp.html">Sign up</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            autocomplete="on"
-          />
-        </div>
-
-        <button type="button" id="lbtn">Login</button>
-      </form>
-      <hr style="margin-top: 20px;">
-      <button class="login-with-google" onclick="loginWithGoogle()">
-        <img
-          src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-          alt="Google Logo"
-        />
-        <span>Login with Google</span>
-      </button>
-
-
+      </div>
     </div>
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -123,6 +287,8 @@
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup,
   } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -150,12 +316,51 @@
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        alert("Signin successful");
+        // alert("Signin successful");
+        Swal.fire({
+          icon: "success",
+          title: "Success!",
+          text: "Registration successful",
+        }).then(() => {
+          console.log(user);
+          window.location.href = "login.html";
+        });
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert(errorMessage);
+        // alert(errorMessage);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: errorMessage,
+        });
+      });
+  });
+
+  const provider = new GoogleAuthProvider();
+
+  document.getElementById("goFast1").addEventListener("click", function () {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        window.location.href = "../index.html";
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
       });
   });
 </script>
