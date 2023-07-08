@@ -101,7 +101,7 @@
            <li><a href="monu/location.html">LOCATION</a></li>
            <li><a href="#">EVENT</a></li>
            <li><a href="monu/contact.html">CONTACT</a></li>
-           <li><a id="UserM" href="#">SignUp/LogIn</a></li>
+           <li><a id="UserM" href="Aviral/signUp.html">SignUp</a></li>
     
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -1189,6 +1189,13 @@
     ></script>
     <script src="/monu/Script/newsletter.js"></script>
    <script src="./monu/Script/index.js"></script>
+   <script>
+   var usermonu = localStorage.getItem("userName");
+   if(usermonu != "" || usermonu != null){
+ document.getElementById("UserM").textContent=usermonu;
+   }
+
+   </script>
    
   </body>
 </html>
