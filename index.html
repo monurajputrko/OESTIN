@@ -101,7 +101,7 @@
            <li><a href="monu/location.html">LOCATION</a></li>
            <li><a href="#">EVENT</a></li>
            <li><a href="monu/contact.html">CONTACT</a></li>
-           <li><a id="UserM" href="Aviral/signUp.html">SignUp</a></li>
+           <li onclick="Logout()" ><a id="UserM" href="Aviral/signUp.html" >SIGN UP</a></li>
     
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -1196,10 +1196,11 @@
     }else{
       document.getElementById("UserM").textContent="SignUp";
     }
-    document.getElementById("UserM").addEventListener("click",function(){
+
+    function Logout(){
       localStorage.removeItem('userName');
-      document.getElementById("UserM").textContent="SignUp";
-    })
+      localStorage.setItem("userName","SIGN UP");
+    }
     </script>
   </body>
 </html>
