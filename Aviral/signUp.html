@@ -379,7 +379,7 @@
 
     let userDetail = firstName;
 
-    localStorage.setItem("userDetail", JSON.stringify(userDetail));
+    localStorage.setItem("userName", JSON.stringify(userDetail));
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
