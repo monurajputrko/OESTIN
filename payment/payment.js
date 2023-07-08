@@ -8,6 +8,34 @@ verifyButton.textContent = "Verify & Continue";
 
 let otp;
 
+let startDate = localStorage.getItem("sdate");
+let endDate = localStorage.getItem("edate");
+let hotelLocation = localStorage.getItem("PayLocation");
+let noPersons = localStorage.getItem("persons");
+let noRooms = localStorage.getItem("rooms");
+let roomPrice = localStorage.getItem("price");
+let finalPrice = noRooms * roomPrice * 0.90;
+let specialDiscount = noRooms * roomPrice * 0.10;
+localStorage.setItem("roomPrice", roomPrice);
+localStorage.setItem("specialDiscount", specialDiscount);
+localStorage.setItem("finalPrice", finalPrice);
+console.log(finalPrice);
+document.getElementById("hotelRoomAddress").textContent = "";
+document.getElementById("hotelRoomAddress").append(hotelLocation);
+document.getElementById("startDay").textContent = "";
+document.getElementById("startDay").append(startDate);
+document.getElementById("endDay").textContent = "";
+document.getElementById("endDay").append(endDate);
+document.getElementById("noRoom").textContent = "";
+document.getElementById("noRoom").append(noRooms);
+document.getElementById("noPeople").textContent = "";
+document.getElementById("noPeople").append(noPersons);
+document.getElementById("roomPrice").textContent = "";
+document.getElementById("roomPrice").append(roomPrice);
+document.getElementById("finalPrice").textContent = "";
+document.getElementById("finalPrice").append(finalPrice);
+document.getElementById("specialDiscount").textContent = "";
+document.getElementById("specialDiscount").append(specialDiscount);
 
 //to verify the details ENDED
 
@@ -60,6 +88,10 @@ getOTP.addEventListener("click", function() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let mobile = document.getElementById("mobile").value;
+    localStorage.setItem("bookedName", name);
+    localStorage.setItem("bookedEmail", email);
+    localStorage.setItem("bookedMobile", mobile);
+
     let emailValidity = validateEmailInput(email);
     let mobileValidity = validateMobileInput(mobile);
 console.log(emailValidity, mobileValidity);
@@ -204,7 +236,8 @@ function payment() {
 }
 
 function paymentGateway() {
-  let checkout = 3000 * 100;
+  let checkout = localStorage.getItem("finalPrice") * 100;
+  console.log(checkout);
   var options = {
     key: "rzp_test_UM3NWIQ3rEh0JA", // Enter the Key ID generated from the Dashboard
     amount: checkout, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
@@ -227,5 +260,5 @@ function paymentGateway() {
   var rzp1 = new Razorpay(options);
 
   rzp1.open();
-  e.preventDefault();
+  event.preventDefault();
 }
