@@ -78,5 +78,5 @@ function CheckAvail() {
 }
 
 function booknow() {
-    window.location.href = "./rooms.html";
+    window.location.href = "../../payment/payment.html";
 }
