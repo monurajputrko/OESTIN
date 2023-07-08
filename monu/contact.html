@@ -429,7 +429,12 @@
     var usermonu = localStorage.getItem("userName");
     if(usermonu != "" || usermonu != null){
   document.getElementById("UserM").textContent=usermonu;
+    }else{
+      document.getElementById("UserM").textContent="SignUp";
     }
- 
+    document.getElementById("UserM").addEventListener("click",function(){
+      localStorage.removeItem('userName');
+      document.getElementById("UserM").textContent="SignUp";
+    })
     </script>
 </html>
