@@ -371,4 +371,8 @@
     }else{
       document.getElementById("UserM").textContent="SignUp";
     }
+    document.getElementById("UserM").addEventListener("click",function(){
+      localStorage.removeItem('userName');
+      document.getElementById("UserM").textContent="SignUp";
+    })
     </script>
