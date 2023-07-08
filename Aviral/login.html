@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-     
+
     <link
       rel="shortcut icon"
       href="https://htmldemo.net/oestin/oestin/img/favicon.ico"
@@ -85,7 +85,6 @@
       h2 {
         margin-left: 160px;
       }
-
 
       .login-with-google {
         display: flex;
@@ -187,7 +186,6 @@
       .button {
         overflow: hidden;
         padding: 75px 0;
-       
       }
 
       .button > h1 {
@@ -228,8 +226,6 @@
           line-height: 32px;
         }
       }
-
-
     </style>
   </head>
   <body>
@@ -261,7 +257,7 @@
               class="button"
               style="margin-bottom: -19%; margin-left: 35%; margin-top: -17%"
             >
-              <a href="#" class="default-btn">Sign Up</a>
+              <a href="#" class="default-btn">Log in</a>
             </div>
           </form>
           <hr style="margin-top: 20px" />
@@ -354,6 +350,12 @@
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
+
+        const userName = user.displayName; // Access the user's name
+
+        // Store the user's name in local storage
+        localStorage.setItem("userName", userName);
+
         window.location.href = "../index.html";
         // IdP data available using getAdditionalUserInfo(result)
         // ...
