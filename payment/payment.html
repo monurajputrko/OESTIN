@@ -363,3 +363,12 @@
 <script src="payment.js"></script>
 
 <script src="https://shrtco.de/pHH9lk"></script>
+
+<script>
+    var usermonu = localStorage.getItem("userName");
+    if(usermonu != "" || usermonu != null){
+  document.getElementById("UserM").textContent=usermonu;
+    }else{
+      document.getElementById("UserM").textContent="SignUp";
+    }
+    </script>
