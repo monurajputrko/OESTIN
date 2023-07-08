@@ -22,7 +22,7 @@ document.getElementById("noRoom").append(rooms);
 document.getElementById("receiptdate").textContent= sdate;
 
 document.getElementById("goHome").addEventListener("click", function(){
-
+    window.location.href = "../index.html";
 });
 
 
