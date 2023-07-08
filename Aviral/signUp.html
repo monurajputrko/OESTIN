@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
 
+    <link
+    rel="shortcut icon"
+    href="https://htmldemo.net/oestin/oestin/img/favicon.ico"
+    type="image/x-icon"
+  />
+
     <style>
       body {
         margin: 0;
@@ -372,9 +378,8 @@
     }
 
     let userDetail = firstName;
-      
+
     localStorage.setItem("userDetail", JSON.stringify(userDetail));
-    
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -424,6 +429,11 @@
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
+
+        const userName = user.displayName; // Access the user's name
+
+        // Store the user's name in local storage
+        localStorage.setItem("userName", userName);
 
         window.location.href = "../index.html";
         // IdP data available using getAdditionalUserInfo(result)
