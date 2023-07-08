@@ -11,26 +11,30 @@
         <div id ="hotelDetailsDiv">
             <div id = "hotelNameDiv"><p><b>Oestin Hotels</b></p></div>
             <div id="hotelLocationDiv">
-                <div id ="hotelLocation"><p>Bengaluru</p></div>
-                <div id ="hotelMobileNumber"><p>0877-2234564</p></div>
-                <div id ="hotelEmail"><p>oestinhotels@gmail.com</p></div>
-                <div id ="hotelWebsite"><p>www.hoteloestinxyz.com</p></div>
+                <div id ="hotelLocation"><i class="fa-solid fa-location-dot"></i><p>Bengaluru</p></div>
+                <div id ="hotelMobileNumber"><i class="fa-solid fa-phone"></i><p>0877-2234564</p></div>
+                <div id ="hotelEmail"><i class="fa-solid fa-at"></i><p>oestinhotels@gmail.com</p></div>
+                <div id ="hotelWebsite"><i class="fa-brands fa-internet-explorer"></i><p>www.hoteloestinxyz.com</p></div>
             </div>
         </div>
         <hr>
         <div id ="customerDetailsDiv">
             <div id="paidByDiv">
                 <div id="custumorContactsDiv">
-                    <p><b>Paid By</b></p>
-                    <p id = "customerName">Chakri Ganesh N</p>
-                    <p id = "customerMobile">833244569</p>
-                    <p id = "customerEmail">chakriganesh10@gmail.com</p>
+                    <h3><b>Paid By</b></h3>
+                    <p id = "customerName"></p>
+                    <p id = "customerMobile"></p>
+                    <p id = "customerEmail"></p>
                 </div>
                 <div id="receiptDiv">
                     <h2>RECEIPT</h2>
                 </div>
             </div>
+            <hr>
+            <div id = "lastDiv">
+                <h3>Booking Details</h3>
             <div id="bookingDetailsDiv">
+                
                 <div id="checkInDiv">
                     <div id="leftCheckInDiv">
                         <p>Check-in</p>
@@ -39,10 +43,10 @@
                         <p>Unit</p>
                     </div>
                     <div id="rightCheckInDiv">
-                        <p>Friday, 14:23:13 </p>
-                        <p>Sunday, 13:24:12</p>
-                        <p>Vamsi B</p>
-                        <p>Deluxe Room</p>
+                        <p id = "Checkin"></p>
+                        <p id = "Checkout"></p>
+                        <p id = "Guest"></p>
+                        <p id = "Unit">Deluxe Room</p>
                     </div>
                 </div>
                 <div id="receiptNoDiv">
@@ -55,10 +59,12 @@
                     <div id="rightReceiptNoDiv">
                         <p>0000234</p>
                         <p>215</p>
-                        <p>23-4-2020</p>
+                        <p><span id = "receiptdate"></span></p>
                     </div>
                 </div>
             </div>
+            </div>
+            
         </div>
         <div id ="roomBookingDiv">
             <table>
@@ -67,16 +73,16 @@
                   <th>Amount</th>
                 </tr>
                 <tr>
-                  <td>Deluxe Room * 1</td>
-                  <td>₹2500</td>
+                  <td>Deluxe Room * <span id ="noRoom"></span></td>
+                  <td>₹<span id = "mrp"></span></td>
                 </tr>
                 <tr>
                   <td>Discount</td>
-                  <td>₹500</td>
+                  <td>₹<span id = "discount"></span></td>
                 </tr>
                 <tr>
                   <td>Total</td>
-                  <td>₹500</td>
+                  <td>₹<span id = "lastprice"></span></td>
                 </tr>
               </table>
         </div>
@@ -84,15 +90,17 @@
             <p><b>Notes</b></p>
              <p>Thank you for staying with us! Looking forward for your next visit.</p>
         </div>
+        
+        
+    </div>
+    
+    <div id = "buttondiv">
+        <button id = "goHome">Go to Homepage</button><br>
         <button id = "print" >Print as PDF</button>
     </div>
 </body>
 </html>
 
+<script src="https://kit.fontawesome.com/c4e7e8fce5.js" crossorigin="anonymous"></script>
 
-<script>
-
-document.getElementById("print").addEventListener("click", function(){
-        window.print();
-});
-</script>
+<script src="./receipt.js"></script>
