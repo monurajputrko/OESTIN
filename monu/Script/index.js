@@ -12,7 +12,7 @@ async function searchLocation(){
   }
 
 
-  let response = await fetch("https://weak-bandanna-fox.cyclic.app/rooms");
+  let response = await fetch("https://drab-tan-sawfish-kit.cyclic.cloud/rooms");
   let data = await response.json();
   // console.log(data);
    
