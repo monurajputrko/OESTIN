@@ -56,7 +56,7 @@ sortOp.addEventListener("change", function() {
 async function lth(){
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=rent&_order=asc`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_sort=rent&_order=asc`
     );
     let data = await response.json();
     Data(data);
@@ -70,7 +70,7 @@ async function lth(){
 async function htl(){
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=rent&_order=desc`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_sort=rent&_order=desc`
     );
     let data = await response.json();
     Data(data);
@@ -84,7 +84,7 @@ async function htl(){
 async function zta(){
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=roomtype&_order=desc`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_sort=roomtype&_order=desc`
     );
     let data = await response.json();
     Data(data);
@@ -98,7 +98,7 @@ async function zta(){
 async function atz(){
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_sort=roomtype&_order=asc`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_sort=roomtype&_order=asc`
     );
     let data = await response.json();
     Data(data);
@@ -124,7 +124,7 @@ let li1 = document.getElementById("li1")
 page=1;
 try {
   let response = await fetch(
-    `https://weak-bandanna-fox.cyclic.app/rooms?_page=1&_limit=9`
+    `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_page=1&_limit=9`
   );
   let data = await response.json();
   Data(data);
@@ -140,7 +140,7 @@ let li2 = document.getElementById("li2")
 page=2;
 try {
   let response = await fetch(
-    `https://weak-bandanna-fox.cyclic.app/rooms?_page=2&_limit=9`
+    `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_page=2&_limit=9`
   );
   let data = await response.json();
   Data(data);
@@ -156,7 +156,7 @@ let li3 = document.getElementById("li3")
 page=3;
 try {
   let response = await fetch(
-    `https://weak-bandanna-fox.cyclic.app/rooms?_page=3&_limit=9`
+    `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_page=3&_limit=9`
   );
   let data = await response.json();
   Data(data);
@@ -236,7 +236,7 @@ Load();
 async function Load() {
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms?_page=${page}&_limit=18`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms?_page=${page}&_limit=18`
     );
     arr = await response.json();
     
@@ -251,7 +251,7 @@ async function Load() {
 async function Load2() {
   try {
     let response = await fetch(
-      `https://weak-bandanna-fox.cyclic.app/rooms`
+      `https://drab-tan-sawfish-kit.cyclic.cloud/rooms`
     );
     arr = await response.json();
     
