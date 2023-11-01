@@ -29,7 +29,8 @@ function getRandomBoolean() {
 
 // Call the function and store the result
 
-const result = getRandomBoolean();
+// const result = getRandomBoolean();
+const result = true;
 
 console.log(result);
 
