@@ -1,0 +1,185 @@
+@media {
+    .fa-solid {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        display: inline-block;
+        display: var(--fa-display, inline-block);
+        font-family: Font Awesome\ 6 Free;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-rendering: auto;
+    }
+
+    .fa-bars:before {
+        content: "\f0c9";
+    }
+
+    .fa-bag-shopping:before {
+        content: "\f290";
+    }
+
+    .fa-xmark:before {
+        content: "\f00d";
+    }
+
+    .fa-solid {
+        font-weight: 900;
+    }
+}
+
+#header {
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
+    justify-content: space-between;
+    left: 0;
+    padding: 20px 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#header,
+#navbar {
+    align-items: center;
+    display: flex;
+}
+
+#navbar {
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+#navbar li a.active,
+#navbar li a:hover {
+    color: #B5876D;
+}
+
+#navbar li a.active:after,
+#navbar li a:hover:after {
+    background: #B5876D;
+    bottom: -4px;
+    content: "";
+    height: 2px;
+    left: 20px;
+    position: absolute;
+    width: 30%;
+}
+
+#mobile {
+    align-items: center;
+}
+
+#close,
+#mobile {
+    display: none;
+}
+
+@media (max-width:799px) {
+    #navbar {
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .01);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        padding: 80px 0 0 10px;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        transition: .3s;
+        width: 300px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        align-items: center;
+        display: flex;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    #close {
+        color: #222;
+        display: inline;
+        display: initial;
+        font-size: 24px;
+        left: 30px;
+        position: absolute;
+        top: 30px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+}
+
+@media (max-width:477px) {
+    #header {
+        padding: 10px 30px;
+    }
+}
+
+@media {
+    .fa-solid {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        display: inline-block;
+        display: var(--fa-display, inline-block);
+        font-family: Font Awesome\ 6 Free;
+        font-style: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-rendering: auto;
+    }
+
+    .fa-solid {
+        font-weight: 900;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: League Spartan, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-display: block;
+    font-family: Font Awesome\ 6 Free;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://ka-f.fontawesome.com/releases/v6.4.2/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.2/webfonts/free-fa-regular-400.ttf) format("truetype");
+}
+
+#header{
+    margin-bottom: 4%;
+}
